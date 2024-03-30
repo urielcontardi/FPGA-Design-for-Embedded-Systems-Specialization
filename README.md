@@ -1,4 +1,4 @@
-# FPGA-Design-for-Embedded-Systems-Specialization
+# FPGA Design for Embedded Systems Specialization
 ## University of Colorado Boulder
 
 This repository contains the course materials and projects for the "FPGA Design for Embedded Systems Specialization" course offered by the University of Colorado Boulder on Coursera
