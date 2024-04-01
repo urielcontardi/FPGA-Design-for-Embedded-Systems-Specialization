@@ -229,6 +229,83 @@ module regFile #(
 endmodule
 ```
 
+### Dual Port RAM
+```verilog
+module DRAM #(
+    parameter   Dwidth = 8,
+                Awidth = 10
+    )
+    (
+        input wire clk,
+        input wire we,
+        input wire [(Awidth-1):0] w_addr, r_addr,
+        input wire [(Dwidth-1):0] d,
+        output wire [(Dwidth-1):0] q,
+    );
+
+    // Signal Declaration
+    reg [Dwidth-1:0] ram [2**Awidth-1:0];
+    reg [Dwidth-1:0] data_reg;
+
+    // RAM Initialization from an external file
+    initial
+        $readmemh("initialRAM.txt", ram)
+
+    // Body
+    always @(posedge clk)
+        begin
+            if(we)
+                ram[w_addr] <= d;
+            data_reg <= ram[r_addr];
+        end
+
+    // Read Operation
+    assign q = data_reg;
+
+endmodule
+```
+
+### ROM
+```verilog
+module DRAM #(
+    parameter   Dwidth = 8,
+                Awidth = 3
+    )
+    (
+        input wire clk,
+        input wire [(Awidth-1):0] addr,
+        output wire [(Dwidth-1):0] data
+    );
+
+    // Signal Declaration
+    reg [Dwidth-1:0] rom_data, data_reg;
+
+    // RAM Initialization from an external file
+    initial
+        $readmemh("initialRAM.txt", ram)
+
+    // Body
+    always @(posedge clk)
+        data_reg <= rom_data;
+
+    always @*
+        case(addr)
+            3'b000: rom_data = 8'b1000_0000;
+            3'b001: rom_data = 8'b1010_1010;
+            3'b010: rom_data = 8'b0101_0101;
+            3'b011: rom_data = 8'b1000_0011;
+            3'b100: rom_data = 8'b0000_0000;
+            3'b101: rom_data = 8'b1001_1001;
+            3'b110: rom_data = 8'b1000_0001;
+            3'b111: rom_data = 8'b1111_0000;
+        endcase
+
+    // Assign output
+    assign data = data_reg;
+
+endmodule
+```
+
 ---
 # Bus and Tristate Buffers
 ## Tri-State bus

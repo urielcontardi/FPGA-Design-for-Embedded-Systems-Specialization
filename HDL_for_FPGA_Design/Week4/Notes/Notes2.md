@@ -108,3 +108,84 @@ module Adder_tb(); // No sensitivy list
         
 endmodule
 ```
+
+
+---
+# State Machine (Binary Encoding)
+
+```verilog
+module AngleFSM #(
+    parameter   State_Width = 3,
+                An0 = 3'b000,
+                An45 = 3'b001,
+                An90 = 3'b010,
+                An135 = 3'b011,
+                An180 = 3'b100,
+                An225 = 3'b101,
+                An270 = 3'b110,
+                An315 = 3'b111,
+    )
+    (
+        input wire clk, reset, MoveCW, MoveCCW,
+        input wire [(State_width-1):0] PhysicalPosition,
+        output wire [(State_width-1):0] DesiredPosition, PosError
+    );
+
+    reg [(State_width-1):0] CurrentState, NextState;
+
+    // Body of FSM
+    always @(posedge clk or negedge reset)
+    begin: Sequential
+        if(!reset)
+            CurrentState = PhysicalPosition;
+        else
+            CurrentState = NextState;
+    end
+
+    always @(MoveCW or MoceCCW or PhysyicalPosition or CurrentState)
+    begin: Combinational
+
+        case (CurrentState)
+            An0:
+                if(MoveCW == 1)
+                    NextState = An45;
+                else if (MoveCCW = 1)
+                    NextState = An315;
+                else
+                    NextState = An0;
+                
+            An45:
+                if(MoveCW == 1)
+                    NextState = An90;
+                else if (MoveCCW = 1)
+                    NextState = An0;
+                else
+                    NextState = An45;
+
+            // States An90 to An270 here
+
+            An315:
+                if(MoveCW == 1)
+                    NextState = An0;
+                else if (MoveCCW = 1)
+                    NextState = An270;
+                else
+                    NextState = An315;
+
+            default:
+                NextStae = PhysicalPosition;
+                
+        endcase
+
+    end
+        
+endmodule
+```
+
+Os outros tipos de Encoding para criação de stateMachine são:
+
+![Circuito Sintetizado](misc/5.png)
+
+Note que a depender do tipo escolhido os recursos lógicos podem variar, cada encoding possui suas vantagens e desvantagens, a tabela abaixo ilustra o exemplo acima implementado com os diferentes tipos de encoding.
+
+![Circuito Sintetizado](misc/6.png)
