@@ -1,0 +1,1 @@
+Very introductory concepts, I forgot to save the exercises and assignments for this course
