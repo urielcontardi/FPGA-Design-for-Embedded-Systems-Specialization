@@ -1,0 +1,27 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\uriel\OneDrive\햞ea de Trabalho\FPGA-Design-for-Embedded-Systems-Specialization\3_FPGA_Softcore _Processors_and _IP_Acquisition\Week1\DE10_LITE_Golden_Top\ProjectSystem.qsys" --block-symbol-file --output-directory="C:\Users\uriel\OneDrive\햞ea de Trabalho\FPGA-Design-for-Embedded-Systems-Specialization\3_FPGA_Softcore _Processors_and _IP_Acquisition\Week1\DE10_LITE_Golden_Top\ProjectSystem" --family="MAX 10" --part=10M50DAF484C6GES
+Progress: Loading DE10_LITE_Golden_Top/ProjectSystem.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\uriel\OneDrive\햞ea de Trabalho\FPGA-Design-for-Embedded-Systems-Specialization\3_FPGA_Softcore _Processors_and _IP_Acquisition\Week1\DE10_LITE_Golden_Top\ProjectSystem.qsys" --synthesis=VERILOG --output-directory="C:\Users\uriel\OneDrive\햞ea de Trabalho\FPGA-Design-for-Embedded-Systems-Specialization\3_FPGA_Softcore _Processors_and _IP_Acquisition\Week1\DE10_LITE_Golden_Top\ProjectSystem\synthesis" --family="MAX 10" --part=10M50DAF484C6GES
+Progress: Loading DE10_LITE_Golden_Top/ProjectSystem.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ProjectSystem: Generating ProjectSystem "ProjectSystem" for QUARTUS_SYNTH
+Info: ProjectSystem: Done "ProjectSystem" with 1 modules, 1 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
