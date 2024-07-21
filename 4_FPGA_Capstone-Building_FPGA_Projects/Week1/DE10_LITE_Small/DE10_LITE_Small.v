@@ -25,6 +25,8 @@ module DE10_LITE_Small(
 	//////////// LED //////////
 	output		     [9:0]		LEDR,
 
+	//////////// SW //////////
+	input 		     [9:0]		SW,
 
 	//////////// Accelerometer //////////
 	output		          		GSENSOR_CS_N,
@@ -70,8 +72,7 @@ always@(posedge MAX10_CLK2_50)
     end
 	 
 
-assign	LEDR      	=	resrt_n? ( SW[0] ? led_gensor : {	Cont[25:24],Cont[25:24],Cont[25:24],Cont[25:24],Cont[25:24]	} ) :10'h3ff
-;
+assign	LEDR      	=	resrt_n? ( SW[0] ? led_gensor : {	Cont[25:24],Cont[25:24],Cont[25:24],Cont[25:24],Cont[25:24]	} ) :10'h3ff;
 assign	mSEG7_DIG	=	resrt_n? {	Cont[27:24],Cont[27:24],Cont[27:24],Cont[27:24],Cont[27:24],Cont[27:24] } :{6{4'b1000}};
 
 

@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sun Jul 21 09:52:22 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : DE10_LITE_Small
+Top-level Entity Name : DE10_LITE_Small
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 127 / 49,760 ( < 1 % )
+    Total combinational functions : 125 / 49,760 ( < 1 % )
+    Dedicated logic registers : 75 / 49,760 ( < 1 % )
+Total registers : 75
+Total pins : 79 / 360 ( 22 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

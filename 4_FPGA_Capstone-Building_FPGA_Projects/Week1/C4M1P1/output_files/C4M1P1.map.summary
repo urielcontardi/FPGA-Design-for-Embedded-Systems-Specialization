@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sun Jul 21 10:17:25 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : C4M1P1
+Top-level Entity Name : DE10_LITE_Golden_Top
+Family : MAX 10
+Total logic elements : 14
+    Total combinational functions : 14
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 185
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
