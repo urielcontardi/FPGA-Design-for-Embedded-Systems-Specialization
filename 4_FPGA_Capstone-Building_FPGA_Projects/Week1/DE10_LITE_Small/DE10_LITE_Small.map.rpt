@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE10_LITE_Small
-Sun Jul 21 09:52:09 2024
+Wed Jul 24 19:22:29 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -52,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jul 21 09:52:09 2024          ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul 24 19:22:29 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; DE10_LITE_Small                                ;
 ; Top-level Entity Name              ; DE10_LITE_Small                                ;
@@ -174,20 +174,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                               ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                                                 ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; DE10_LITE_Small.v                ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v  ;         ;
-; v/spi_param.h                    ; yes             ; User File              ; /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_param.h      ;         ;
-; v/spi_ee_config.v                ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_ee_config.v  ;         ;
-; v/spi_controller.v               ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_controller.v ;         ;
-; v/SEG7_LUT_6.v                   ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/SEG7_LUT_6.v     ;         ;
-; v/SEG7_LUT.v                     ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/SEG7_LUT.v       ;         ;
-; v/Reset_Delay.v                  ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/Reset_Delay.v    ;         ;
-; v/led_driver.v                   ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v     ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                                                         ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; DE10_LITE_Small.v                ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v  ;         ;
+; v/spi_param.h                    ; yes             ; User File              ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_param.h      ;         ;
+; v/spi_ee_config.v                ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_ee_config.v  ;         ;
+; v/spi_controller.v               ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_controller.v ;         ;
+; v/SEG7_LUT_6.v                   ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/SEG7_LUT_6.v     ;         ;
+; v/SEG7_LUT.v                     ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/SEG7_LUT.v       ;         ;
+; v/Reset_Delay.v                  ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/Reset_Delay.v    ;         ;
+; v/led_driver.v                   ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v     ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------+
@@ -469,68 +469,68 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sun Jul 21 09:52:00 2024
+    Info: Processing started: Wed Jul 24 19:22:21 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE10_LITE_Small -c DE10_LITE_Small
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file DE10_LITE_Small.v
-    Info (12023): Found entity 1: DE10_LITE_Small File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 6
+    Info (12023): Found entity 1: DE10_LITE_Small File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file v/spi_ee_config.v
-    Info (12023): Found entity 1: spi_ee_config File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_ee_config.v Line: 1
+    Info (12023): Found entity 1: spi_ee_config File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_ee_config.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v/spi_controller.v
-    Info (12023): Found entity 1: spi_controller File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_controller.v Line: 1
+    Info (12023): Found entity 1: spi_controller File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v/SEG7_LUT_6.v
-    Info (12023): Found entity 1: SEG7_LUT_6 File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/SEG7_LUT_6.v Line: 1
+    Info (12023): Found entity 1: SEG7_LUT_6 File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/SEG7_LUT_6.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v/SEG7_LUT.v
-    Info (12023): Found entity 1: SEG7_LUT File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/SEG7_LUT.v Line: 1
+    Info (12023): Found entity 1: SEG7_LUT File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/SEG7_LUT.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v/Reset_Delay.v
-    Info (12023): Found entity 1: Reset_Delay File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/Reset_Delay.v Line: 1
-Warning (10229): Verilog HDL Expression warning at led_driver.v(44): truncated literal to match 3 bits File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v Line: 44
+    Info (12023): Found entity 1: Reset_Delay File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/Reset_Delay.v Line: 1
+Warning (10229): Verilog HDL Expression warning at led_driver.v(44): truncated literal to match 3 bits File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file v/led_driver.v
-    Info (12023): Found entity 1: led_driver File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v Line: 1
+    Info (12023): Found entity 1: led_driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v Line: 1
 Info (12127): Elaborating entity "DE10_LITE_Small" for the top level hierarchy
-Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 80
-Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/Reset_Delay.v Line: 10
-Info (12128): Elaborating entity "SEG7_LUT_6" for hierarchy "SEG7_LUT_6:u0" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 90
-Info (12128): Elaborating entity "SEG7_LUT" for hierarchy "SEG7_LUT_6:u0|SEG7_LUT:u0" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/SEG7_LUT_6.v Line: 5
-Info (12128): Elaborating entity "spi_ee_config" for hierarchy "spi_ee_config:u_spi_ee_config" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 104
-Warning (10230): Verilog HDL assignment warning at spi_ee_config.v(113): truncated value with size 32 to match size of target (15) File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_ee_config.v Line: 113
-Info (12128): Elaborating entity "spi_controller" for hierarchy "spi_ee_config:u_spi_ee_config|spi_controller:u_spi_controller" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_ee_config.v Line: 60
-Info (12128): Elaborating entity "led_driver" for hierarchy "led_driver:u_led_driver" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 114
-Warning (10036): Verilog HDL or VHDL warning at led_driver.v(16): object "int2_count_en" assigned a value but never read File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v Line: 16
-Warning (10230): Verilog HDL assignment warning at led_driver.v(69): truncated value with size 32 to match size of target (24) File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v Line: 69
+Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 80
+Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/Reset_Delay.v Line: 10
+Info (12128): Elaborating entity "SEG7_LUT_6" for hierarchy "SEG7_LUT_6:u0" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 90
+Info (12128): Elaborating entity "SEG7_LUT" for hierarchy "SEG7_LUT_6:u0|SEG7_LUT:u0" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/SEG7_LUT_6.v Line: 5
+Info (12128): Elaborating entity "spi_ee_config" for hierarchy "spi_ee_config:u_spi_ee_config" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 104
+Warning (10230): Verilog HDL assignment warning at spi_ee_config.v(113): truncated value with size 32 to match size of target (15) File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_ee_config.v Line: 113
+Info (12128): Elaborating entity "spi_controller" for hierarchy "spi_ee_config:u_spi_ee_config|spi_controller:u_spi_controller" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/spi_ee_config.v Line: 60
+Info (12128): Elaborating entity "led_driver" for hierarchy "led_driver:u_led_driver" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 114
+Warning (10036): Verilog HDL or VHDL warning at led_driver.v(16): object "int2_count_en" assigned a value but never read File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v Line: 16
+Warning (10230): Verilog HDL assignment warning at led_driver.v(69): truncated value with size 32 to match size of target (24) File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v Line: 69
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "GSENSOR_SDO" has no driver File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 39
-Info (13000): Registers with preset signals will power-up high File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v Line: 59
+    Warning (13040): bidirectional pin "GSENSOR_SDO" has no driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 39
+Info (13000): Registers with preset signals will power-up high File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/v/led_driver.v Line: 59
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[7]" is stuck at GND File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 15
-    Warning (13410): Pin "HEX1[7]" is stuck at GND File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 16
-    Warning (13410): Pin "HEX2[7]" is stuck at GND File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 17
-    Warning (13410): Pin "HEX3[7]" is stuck at GND File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 18
-    Warning (13410): Pin "HEX4[7]" is stuck at GND File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 19
-    Warning (13410): Pin "HEX5[7]" is stuck at GND File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 20
-    Warning (13410): Pin "GSENSOR_CS_N" is stuck at VCC File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 32
-    Warning (13410): Pin "GSENSOR_SCLK" is stuck at VCC File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 34
+    Warning (13410): Pin "HEX0[7]" is stuck at GND File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 15
+    Warning (13410): Pin "HEX1[7]" is stuck at GND File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 16
+    Warning (13410): Pin "HEX2[7]" is stuck at GND File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 17
+    Warning (13410): Pin "HEX3[7]" is stuck at GND File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 18
+    Warning (13410): Pin "HEX4[7]" is stuck at GND File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 19
+    Warning (13410): Pin "HEX5[7]" is stuck at GND File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 20
+    Warning (13410): Pin "GSENSOR_CS_N" is stuck at VCC File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 32
+    Warning (13410): Pin "GSENSOR_SCLK" is stuck at VCC File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 34
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 9 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.map.smsg
+Info (144001): Generated suppressed messages file /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 12 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ADC_CLK_10" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 9
-    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 23
-    Warning (15610): No output dependent on input pin "SW[1]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
-    Warning (15610): No output dependent on input pin "SW[2]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
-    Warning (15610): No output dependent on input pin "SW[3]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
-    Warning (15610): No output dependent on input pin "SW[4]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
-    Warning (15610): No output dependent on input pin "SW[5]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
-    Warning (15610): No output dependent on input pin "SW[6]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
-    Warning (15610): No output dependent on input pin "SW[7]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
-    Warning (15610): No output dependent on input pin "SW[9]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
-    Warning (15610): No output dependent on input pin "GSENSOR_INT[2]" File: /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 33
+    Warning (15610): No output dependent on input pin "ADC_CLK_10" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 9
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 23
+    Warning (15610): No output dependent on input pin "SW[1]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
+    Warning (15610): No output dependent on input pin "SW[2]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
+    Warning (15610): No output dependent on input pin "SW[3]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
+    Warning (15610): No output dependent on input pin "SW[4]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 29
+    Warning (15610): No output dependent on input pin "GSENSOR_INT[2]" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 33
 Info (21057): Implemented 206 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 60 output pins
@@ -538,14 +538,14 @@ Info (21057): Implemented 206 device resources after synthesis - the final resou
     Info (21061): Implemented 127 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
     Info: Peak virtual memory: 464 megabytes
-    Info: Processing ended: Sun Jul 21 09:52:09 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Processing ended: Wed Jul 24 19:22:29 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:33
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in /home/urielcontardi/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.map.smsg.
+The suppressed messages can be found in /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.map.smsg.
 
 

@@ -34,7 +34,7 @@ use ieee.numeric_std.all;
 --------------------------------------------------------------------------
 Entity C4M1P1 is
     Port (
-        SW      : in std_logic_vector(7 downto 0);
+        bin     : in std_logic_vector(7 downto 0);
         HEX1    : out std_logic_vector(6 downto 0);
         HEX0    : out std_logic_vector(6 downto 0)
     );
@@ -73,7 +73,7 @@ Begin
     --------------------------------------------------------------------------
     -- Assign Logic
     --------------------------------------------------------------------------
-    HEX1 <= bin_to_7segment(SW(7 downto 4));
-    HEX0 <= bin_to_7segment(SW(3 downto 0));
+    HEX1 <= bin_to_7segment(bin(7 downto 4));
+    HEX0 <= bin_to_7segment(bin(3 downto 0));
 
 End architecture;

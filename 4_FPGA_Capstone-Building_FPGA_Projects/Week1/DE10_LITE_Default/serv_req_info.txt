@@ -1,0 +1,8 @@
+<internal_error>
+	<executable>quartus</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus (888 megabytes used)</error>
+	<date>Wed Jul 24 18:39:39 2024</date>
+	<version>Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition</version>
+</internal_error>
+
