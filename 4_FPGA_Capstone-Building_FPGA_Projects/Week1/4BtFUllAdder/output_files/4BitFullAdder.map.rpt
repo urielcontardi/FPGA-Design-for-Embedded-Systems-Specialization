@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 4BitFullAdder
-Fri Jul 26 21:56:19 2024
+Fri Jul 26 22:35:19 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul 26 21:56:19 2024          ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 26 22:35:19 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; 4BitFullAdder                                  ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                           ;
@@ -269,19 +269,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Jul 26 21:56:10 2024
+    Info: Processing started: Fri Jul 26 22:35:09 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 4BitFullAdder -c 4BitFullAdder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/C4M1P1.vhdl
+    Info (12022): Found design unit 1: C4M1P1-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/C4M1P1.vhdl Line: 46
+    Info (12023): Found entity 1: C4M1P1 File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/C4M1P1.vhdl Line: 35
 Info (12021): Found 2 design units, including 1 entities, in source file FourBitFUllAdder.vhd
-    Info (12022): Found design unit 1: FourBitFUllAdder-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/FourBitFUllAdder.vhd Line: 46
+    Info (12022): Found design unit 1: FourBitFUllAdder-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/FourBitFUllAdder.vhd Line: 49
     Info (12023): Found entity 1: FourBitFUllAdder File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/FourBitFUllAdder.vhd Line: 36
 Info (12021): Found 2 design units, including 1 entities, in source file /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd
     Info (12022): Found design unit 1: C4M1P2-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd Line: 47
     Info (12023): Found entity 1: C4M1P2 File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd Line: 36
-Info (12021): Found 2 design units, including 1 entities, in source file /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P1.vhdl
-    Info (12022): Found design unit 1: C4M1P1-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P1.vhdl Line: 46
-    Info (12023): Found entity 1: C4M1P1 File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P1.vhdl Line: 35
 Info (12021): Found 2 design units, including 1 entities, in source file FullAdder.vhd
     Info (12022): Found design unit 1: FullAdder-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/FullAdder.vhd Line: 49
     Info (12023): Found entity 1: FullAdder File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/FullAdder.vhd Line: 36
@@ -312,8 +312,8 @@ Warning (10034): Output port "VGA_HS" at DE10_LITE_Golden_Top.v(98) has no drive
 Warning (10034): Output port "VGA_VS" at DE10_LITE_Golden_Top.v(100) has no driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/DE10_LITE_Golden_Top.v Line: 100
 Warning (10034): Output port "GSENSOR_CS_N" at DE10_LITE_Golden_Top.v(105) has no driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/DE10_LITE_Golden_Top.v Line: 105
 Warning (10034): Output port "GSENSOR_SCLK" at DE10_LITE_Golden_Top.v(107) has no driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/DE10_LITE_Golden_Top.v Line: 107
-Info (12128): Elaborating entity "FourBitFUllAdder" for hierarchy "FourBitFUllAdder:u1" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/DE10_LITE_Golden_Top.v Line: 139
-Info (12128): Elaborating entity "FullAdder" for hierarchy "FourBitFUllAdder:u1|FullAdder:\FUllAdderGen:0:FullAdderInst" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/FourBitFUllAdder.vhd Line: 70
+Info (12128): Elaborating entity "FourBitFUllAdder" for hierarchy "FourBitFUllAdder:u1" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/DE10_LITE_Golden_Top.v Line: 143
+Info (12128): Elaborating entity "FullAdder" for hierarchy "FourBitFUllAdder:u1|FullAdder:\FUllAdderGen:0:FullAdderInst" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/FourBitFUllAdder.vhd Line: 65
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/DE10_LITE_Golden_Top.v Line: 52
     Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/DE10_LITE_Golden_Top.v Line: 52
@@ -497,9 +497,9 @@ Info (21057): Implemented 193 device resources after synthesis - the final resou
     Info (21060): Implemented 71 bidirectional pins
     Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 199 warnings
-    Info: Peak virtual memory: 454 megabytes
-    Info: Processing ended: Fri Jul 26 21:56:19 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 448 megabytes
+    Info: Processing ended: Fri Jul 26 22:35:19 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:36
 
 

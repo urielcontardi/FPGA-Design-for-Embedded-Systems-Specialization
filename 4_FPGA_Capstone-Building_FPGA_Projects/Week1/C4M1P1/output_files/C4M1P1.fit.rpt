@@ -1,5 +1,5 @@
 Fitter report for C4M1P1
-Wed Jul 24 20:39:16 2024
+Fri Jul 26 22:54:20 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Jul 24 20:39:15 2024          ;
+; Fitter Status                      ; Successful - Fri Jul 26 22:54:20 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; C4M1P1                                         ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                           ;
@@ -150,12 +150,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 28          ;
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.04        ;
 ; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-14        ;   0.2%      ;
+;     Processors 2-14        ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -1237,14 +1237,16 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------+------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                        ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name             ; Entity Name          ; Library Name ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------+----------------------+--------------+
-; |DE10_LITE_Golden_Top      ; 15 (1)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 185  ; 0            ; 15 (1)       ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top           ; DE10_LITE_Golden_Top ; work         ;
-;    |C4M1P1:u1|             ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|C4M1P1:u1 ; C4M1P1               ; work         ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------+----------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                         ;
++-----------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node        ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                       ; Entity Name          ; Library Name ;
++-----------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------------------------------+----------------------+--------------+
+; |DE10_LITE_Golden_Top             ; 15 (1)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 185  ; 0            ; 15 (1)       ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top                                     ; DE10_LITE_Golden_Top ; work         ;
+;    |C4M1P1:u1|                    ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|C4M1P1:u1                           ; C4M1P1               ; work         ;
+;       |ssDisplayDriver:HEX0_Inst| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|C4M1P1:u1|ssDisplayDriver:HEX0_Inst ; ssDisplayDriver      ; work         ;
+;       |ssDisplayDriver:HEX1_Inst| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |DE10_LITE_Golden_Top|C4M1P1:u1|ssDisplayDriver:HEX1_Inst ; ssDisplayDriver      ; work         ;
++-----------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1441,156 +1443,156 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+--------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                         ;
-+--------------------------+-------------------+---------+
-; Source Pin / Fanout      ; Pad To Core Index ; Setting ;
-+--------------------------+-------------------+---------+
-; ADC_CLK_10               ;                   ;         ;
-; MAX10_CLK1_50            ;                   ;         ;
-; MAX10_CLK2_50            ;                   ;         ;
-; KEY[0]                   ;                   ;         ;
-; KEY[1]                   ;                   ;         ;
-; SW[8]                    ;                   ;         ;
-; SW[9]                    ;                   ;         ;
-; GSENSOR_INT[1]           ;                   ;         ;
-; GSENSOR_INT[2]           ;                   ;         ;
-; DRAM_DQ[0]               ;                   ;         ;
-; DRAM_DQ[1]               ;                   ;         ;
-; DRAM_DQ[2]               ;                   ;         ;
-; DRAM_DQ[3]               ;                   ;         ;
-; DRAM_DQ[4]               ;                   ;         ;
-; DRAM_DQ[5]               ;                   ;         ;
-; DRAM_DQ[6]               ;                   ;         ;
-; DRAM_DQ[7]               ;                   ;         ;
-; DRAM_DQ[8]               ;                   ;         ;
-; DRAM_DQ[9]               ;                   ;         ;
-; DRAM_DQ[10]              ;                   ;         ;
-; DRAM_DQ[11]              ;                   ;         ;
-; DRAM_DQ[12]              ;                   ;         ;
-; DRAM_DQ[13]              ;                   ;         ;
-; DRAM_DQ[14]              ;                   ;         ;
-; DRAM_DQ[15]              ;                   ;         ;
-; GSENSOR_SDI              ;                   ;         ;
-; GSENSOR_SDO              ;                   ;         ;
-; ARDUINO_IO[0]            ;                   ;         ;
-; ARDUINO_IO[1]            ;                   ;         ;
-; ARDUINO_IO[2]            ;                   ;         ;
-; ARDUINO_IO[3]            ;                   ;         ;
-; ARDUINO_IO[4]            ;                   ;         ;
-; ARDUINO_IO[5]            ;                   ;         ;
-; ARDUINO_IO[6]            ;                   ;         ;
-; ARDUINO_IO[7]            ;                   ;         ;
-; ARDUINO_IO[8]            ;                   ;         ;
-; ARDUINO_IO[9]            ;                   ;         ;
-; ARDUINO_IO[10]           ;                   ;         ;
-; ARDUINO_IO[11]           ;                   ;         ;
-; ARDUINO_IO[12]           ;                   ;         ;
-; ARDUINO_IO[13]           ;                   ;         ;
-; ARDUINO_IO[14]           ;                   ;         ;
-; ARDUINO_IO[15]           ;                   ;         ;
-; ARDUINO_RESET_N          ;                   ;         ;
-; GPIO[0]                  ;                   ;         ;
-; GPIO[1]                  ;                   ;         ;
-; GPIO[2]                  ;                   ;         ;
-; GPIO[3]                  ;                   ;         ;
-; GPIO[4]                  ;                   ;         ;
-; GPIO[5]                  ;                   ;         ;
-; GPIO[6]                  ;                   ;         ;
-; GPIO[7]                  ;                   ;         ;
-; GPIO[8]                  ;                   ;         ;
-; GPIO[9]                  ;                   ;         ;
-; GPIO[10]                 ;                   ;         ;
-; GPIO[11]                 ;                   ;         ;
-; GPIO[12]                 ;                   ;         ;
-; GPIO[13]                 ;                   ;         ;
-; GPIO[14]                 ;                   ;         ;
-; GPIO[15]                 ;                   ;         ;
-; GPIO[16]                 ;                   ;         ;
-; GPIO[17]                 ;                   ;         ;
-; GPIO[18]                 ;                   ;         ;
-; GPIO[19]                 ;                   ;         ;
-; GPIO[20]                 ;                   ;         ;
-; GPIO[21]                 ;                   ;         ;
-; GPIO[22]                 ;                   ;         ;
-; GPIO[23]                 ;                   ;         ;
-; GPIO[24]                 ;                   ;         ;
-; GPIO[25]                 ;                   ;         ;
-; GPIO[26]                 ;                   ;         ;
-; GPIO[27]                 ;                   ;         ;
-; GPIO[28]                 ;                   ;         ;
-; GPIO[29]                 ;                   ;         ;
-; GPIO[30]                 ;                   ;         ;
-; GPIO[31]                 ;                   ;         ;
-; GPIO[32]                 ;                   ;         ;
-; GPIO[33]                 ;                   ;         ;
-; GPIO[34]                 ;                   ;         ;
-; GPIO[35]                 ;                   ;         ;
-; SW[0]                    ;                   ;         ;
-;      - C4M1P1:u1|Mux13~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux12~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux11~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux10~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux9~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux8~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux7~0  ; 0                 ; 6       ;
-; SW[1]                    ;                   ;         ;
-;      - C4M1P1:u1|Mux13~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux12~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux11~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux10~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux9~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux8~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux7~0  ; 0                 ; 6       ;
-; SW[2]                    ;                   ;         ;
-;      - C4M1P1:u1|Mux13~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux12~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux11~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux10~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux9~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux8~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux7~0  ; 0                 ; 6       ;
-; SW[3]                    ;                   ;         ;
-;      - C4M1P1:u1|Mux13~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux12~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux11~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux10~0 ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux9~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux8~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux7~0  ; 0                 ; 6       ;
-; SW[4]                    ;                   ;         ;
-;      - C4M1P1:u1|Mux6~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux5~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux4~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux3~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux2~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux1~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux0~0  ; 0                 ; 6       ;
-; SW[5]                    ;                   ;         ;
-;      - C4M1P1:u1|Mux6~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux5~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux4~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux3~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux2~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux1~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux0~0  ; 0                 ; 6       ;
-; SW[6]                    ;                   ;         ;
-;      - C4M1P1:u1|Mux6~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux5~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux4~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux3~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux2~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux1~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux0~0  ; 0                 ; 6       ;
-; SW[7]                    ;                   ;         ;
-;      - C4M1P1:u1|Mux6~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux5~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux4~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux3~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux2~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux1~0  ; 0                 ; 6       ;
-;      - C4M1P1:u1|Mux0~0  ; 0                 ; 6       ;
-+--------------------------+-------------------+---------+
++---------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                  ;
++---------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                               ; Pad To Core Index ; Setting ;
++---------------------------------------------------+-------------------+---------+
+; ADC_CLK_10                                        ;                   ;         ;
+; MAX10_CLK1_50                                     ;                   ;         ;
+; MAX10_CLK2_50                                     ;                   ;         ;
+; KEY[0]                                            ;                   ;         ;
+; KEY[1]                                            ;                   ;         ;
+; SW[8]                                             ;                   ;         ;
+; SW[9]                                             ;                   ;         ;
+; GSENSOR_INT[1]                                    ;                   ;         ;
+; GSENSOR_INT[2]                                    ;                   ;         ;
+; DRAM_DQ[0]                                        ;                   ;         ;
+; DRAM_DQ[1]                                        ;                   ;         ;
+; DRAM_DQ[2]                                        ;                   ;         ;
+; DRAM_DQ[3]                                        ;                   ;         ;
+; DRAM_DQ[4]                                        ;                   ;         ;
+; DRAM_DQ[5]                                        ;                   ;         ;
+; DRAM_DQ[6]                                        ;                   ;         ;
+; DRAM_DQ[7]                                        ;                   ;         ;
+; DRAM_DQ[8]                                        ;                   ;         ;
+; DRAM_DQ[9]                                        ;                   ;         ;
+; DRAM_DQ[10]                                       ;                   ;         ;
+; DRAM_DQ[11]                                       ;                   ;         ;
+; DRAM_DQ[12]                                       ;                   ;         ;
+; DRAM_DQ[13]                                       ;                   ;         ;
+; DRAM_DQ[14]                                       ;                   ;         ;
+; DRAM_DQ[15]                                       ;                   ;         ;
+; GSENSOR_SDI                                       ;                   ;         ;
+; GSENSOR_SDO                                       ;                   ;         ;
+; ARDUINO_IO[0]                                     ;                   ;         ;
+; ARDUINO_IO[1]                                     ;                   ;         ;
+; ARDUINO_IO[2]                                     ;                   ;         ;
+; ARDUINO_IO[3]                                     ;                   ;         ;
+; ARDUINO_IO[4]                                     ;                   ;         ;
+; ARDUINO_IO[5]                                     ;                   ;         ;
+; ARDUINO_IO[6]                                     ;                   ;         ;
+; ARDUINO_IO[7]                                     ;                   ;         ;
+; ARDUINO_IO[8]                                     ;                   ;         ;
+; ARDUINO_IO[9]                                     ;                   ;         ;
+; ARDUINO_IO[10]                                    ;                   ;         ;
+; ARDUINO_IO[11]                                    ;                   ;         ;
+; ARDUINO_IO[12]                                    ;                   ;         ;
+; ARDUINO_IO[13]                                    ;                   ;         ;
+; ARDUINO_IO[14]                                    ;                   ;         ;
+; ARDUINO_IO[15]                                    ;                   ;         ;
+; ARDUINO_RESET_N                                   ;                   ;         ;
+; GPIO[0]                                           ;                   ;         ;
+; GPIO[1]                                           ;                   ;         ;
+; GPIO[2]                                           ;                   ;         ;
+; GPIO[3]                                           ;                   ;         ;
+; GPIO[4]                                           ;                   ;         ;
+; GPIO[5]                                           ;                   ;         ;
+; GPIO[6]                                           ;                   ;         ;
+; GPIO[7]                                           ;                   ;         ;
+; GPIO[8]                                           ;                   ;         ;
+; GPIO[9]                                           ;                   ;         ;
+; GPIO[10]                                          ;                   ;         ;
+; GPIO[11]                                          ;                   ;         ;
+; GPIO[12]                                          ;                   ;         ;
+; GPIO[13]                                          ;                   ;         ;
+; GPIO[14]                                          ;                   ;         ;
+; GPIO[15]                                          ;                   ;         ;
+; GPIO[16]                                          ;                   ;         ;
+; GPIO[17]                                          ;                   ;         ;
+; GPIO[18]                                          ;                   ;         ;
+; GPIO[19]                                          ;                   ;         ;
+; GPIO[20]                                          ;                   ;         ;
+; GPIO[21]                                          ;                   ;         ;
+; GPIO[22]                                          ;                   ;         ;
+; GPIO[23]                                          ;                   ;         ;
+; GPIO[24]                                          ;                   ;         ;
+; GPIO[25]                                          ;                   ;         ;
+; GPIO[26]                                          ;                   ;         ;
+; GPIO[27]                                          ;                   ;         ;
+; GPIO[28]                                          ;                   ;         ;
+; GPIO[29]                                          ;                   ;         ;
+; GPIO[30]                                          ;                   ;         ;
+; GPIO[31]                                          ;                   ;         ;
+; GPIO[32]                                          ;                   ;         ;
+; GPIO[33]                                          ;                   ;         ;
+; GPIO[34]                                          ;                   ;         ;
+; GPIO[35]                                          ;                   ;         ;
+; SW[0]                                             ;                   ;         ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux6~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux5~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux4~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux3~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux2~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux1~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux0~0 ; 0                 ; 6       ;
+; SW[1]                                             ;                   ;         ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux6~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux5~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux4~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux3~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux2~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux1~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux0~0 ; 0                 ; 6       ;
+; SW[2]                                             ;                   ;         ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux6~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux5~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux4~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux3~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux2~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux1~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux0~0 ; 0                 ; 6       ;
+; SW[3]                                             ;                   ;         ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux6~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux5~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux4~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux3~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux2~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux1~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX0_Inst|Mux0~0 ; 0                 ; 6       ;
+; SW[4]                                             ;                   ;         ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux6~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux5~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux4~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux3~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux2~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux1~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux0~0 ; 0                 ; 6       ;
+; SW[5]                                             ;                   ;         ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux6~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux5~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux4~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux3~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux2~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux1~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux0~0 ; 0                 ; 6       ;
+; SW[6]                                             ;                   ;         ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux6~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux5~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux4~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux3~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux2~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux1~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux0~0 ; 0                 ; 6       ;
+; SW[7]                                             ;                   ;         ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux6~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux5~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux4~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux3~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux2~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux1~0 ; 0                 ; 6       ;
+;      - C4M1P1:u1|ssDisplayDriver:HEX1_Inst|Mux0~0 ; 0                 ; 6       ;
++---------------------------------------------------+-------------------+---------+
 
 
 +------------------------------------------------+
@@ -2188,8 +2190,8 @@ Warning (169064): Following 71 pins have no output enable or a GND or VCC output
     Info (169065): Pin GPIO[35] has a permanently disabled output enable File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/DE10_LITE_Golden_Top.v Line: 122
 Info (144001): Generated suppressed messages file /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/output_files/C4M1P1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 1860 megabytes
-    Info: Processing ended: Wed Jul 24 20:39:16 2024
+    Info: Peak virtual memory: 1864 megabytes
+    Info: Processing ended: Fri Jul 26 22:54:21 2024
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:13
 

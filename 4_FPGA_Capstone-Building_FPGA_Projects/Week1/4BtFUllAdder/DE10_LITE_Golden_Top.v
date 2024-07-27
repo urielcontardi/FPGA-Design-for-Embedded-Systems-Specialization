@@ -133,9 +133,14 @@ module DE10_LITE_Golden_Top(
   //=======================================================
   //  Structural coding
   //=======================================================
+  // Instantiate the adder
   FourBitFUllAdder u1 (
-                     .SW(SW[8:0]),
-                     .LEDR(LEDR[4:0])
-                   );
+    .a(SW[7:4]),
+    .b(SW[3:0]),
+    .cin(SW[8]),
+    .s(LEDR[3:0]),
+    .cout(LEDR[4])
+  );
+
 
 endmodule

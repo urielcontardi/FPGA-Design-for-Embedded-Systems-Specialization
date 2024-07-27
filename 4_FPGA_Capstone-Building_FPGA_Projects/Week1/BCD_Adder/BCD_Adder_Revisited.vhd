@@ -1,9 +1,9 @@
---! \file		BCD_Adder.vhd
+--! \file		BCD_Adder_Revisited.vhd
 --!
 --! \brief		
 --!
 --! \author		Uriel Abe Contardi (urielcontardi@hotmail.com)
---! \date       26-07-2024
+--! \date       27-07-2024
 --!
 --! \version    1.0
 --!
@@ -17,8 +17,9 @@
 --! \warning	None
 --!
 --! \note		Revisions:
---!				- 1.0	26-07-2024	<urielcontardi@hotmail.com>
+--!				- 1.0	27-07-2024	<urielcontardi@hotmail.com>
 --!				First revision.
+
 --------------------------------------------------------------------------
 -- Default libraries
 --------------------------------------------------------------------------
@@ -33,7 +34,7 @@ use ieee.numeric_std.all;
 --------------------------------------------------------------------------
 -- Entity declaration
 --------------------------------------------------------------------------
-Entity BCD_Adder is
+Entity BCD_Adder_Revisited is
     Port (
         x           : in std_logic_vector(3 downto 0);
         y           : in std_logic_vector(3 downto 0);
@@ -49,11 +50,9 @@ End entity;
 --------------------------------------------------------------------------
 -- Architecture
 --------------------------------------------------------------------------
-Architecture rtl of BCD_Adder is
+Architecture rtl of BCD_Adder_Revisited is
 
-    signal result : std_logic_vector(4 downto 0);
-    signal Z                    : std_logic;
-    signal A                    : std_logic_vector(3 downto 0);
+    signal result : unsigned(4 downto 0);
     signal hex7Seg0, hex7Seg1   : std_logic_vector(3 downto 0);
     signal hex7Seg              : std_logic_vector(7 downto 0);
 
@@ -62,14 +61,23 @@ Begin
     --------------------------------------------------------------------------
     -- Adder BLock
     --------------------------------------------------------------------------
-    FOurBitAdderInst : Entity work.FourBitFUllAdder
-    Port map(
-        a    => x,
-        b    => y,
-        cin  => cin,
-        s    => result(3 downto 0),
-        cout => result(4)
-    );
+    Adder_comb : process(x,y,cin)
+        variable sum : unsigned(4 downto 0);
+        variable aux : std_logic_vector(0 downto 0);
+    begin
+        aux(0) := cin;
+        sum := unsigned("0"&x) + unsigned("0"&y) + unsigned("0000"&aux);
+
+        if sum >= 10 then
+            hex7Seg1 <= "0001";
+            hex7Seg0 <= std_logic_vector(sum - 10)(hex7Seg0'range);
+        else
+            hex7Seg1 <= "0000";
+            hex7Seg0 <= std_logic_vector(sum)(hex7Seg0'range);
+        end if;
+
+    end process;
+    
 
     --------------------------------------------------------------------------
     -- Display Driver for X Y
@@ -91,31 +99,6 @@ Begin
     --------------------------------------------------------------------------
     -- Display Driver for Result
     --------------------------------------------------------------------------
-    --Z <= (result(3) AND result(1)) OR (result(3) AND result(2));
-    Z <= '1' when result >= "01010" else '0';
-
-    -- Circuit A
-    process(result)
-    begin
-        case result is
-            when "01010" => A <= "0000";
-            when "01011" => A <= "0001";
-            when "01100" => A <= "0010";
-            when "01101" => A <= "0011";
-            when "01110" => A <= "0100";
-            when "01111" => A <= "0101";
-            when "10000" => A <= "0110";
-            when "10001" => A <= "0111";
-            when "10010" => A <= "1000";
-            when "10011" => A <= "1001";
-            when others => A <= "0000"; -- Default case
-        end case;
-    end process;
-
-    -- Segments Control
-    hex7Seg1 <= "000" & Z; -- Z signal control hex7Seg1
-    hex7Seg0 <= A when Z = '1' else result(3 downto 0); -- Mux to hex7Seg0
-
     -- Hex to 7-seg Driver
     HEX7SEGDriver : Entity work.C4M1P1
     Port map(

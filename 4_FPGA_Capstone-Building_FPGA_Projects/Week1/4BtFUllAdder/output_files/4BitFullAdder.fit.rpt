@@ -1,5 +1,5 @@
 Fitter report for 4BitFullAdder
-Fri Jul 26 21:56:29 2024
+Fri Jul 26 22:35:29 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Jul 26 21:56:29 2024          ;
+; Fitter Status                      ; Successful - Fri Jul 26 22:35:29 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; 4BitFullAdder                                  ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                           ;
@@ -155,7 +155,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-14        ;   0.3%      ;
+;     Processors 2-14        ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -2158,10 +2158,10 @@ Warning (169064): Following 71 pins have no output enable or a GND or VCC output
     Info (169065): Pin GPIO[35] has a permanently disabled output enable File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/DE10_LITE_Golden_Top.v Line: 122
 Info (144001): Generated suppressed messages file /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/4BtFUllAdder/output_files/4BitFullAdder.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 1872 megabytes
-    Info: Processing ended: Fri Jul 26 21:56:29 2024
+    Info: Peak virtual memory: 1860 megabytes
+    Info: Processing ended: Fri Jul 26 22:35:29 2024
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +----------------------------+

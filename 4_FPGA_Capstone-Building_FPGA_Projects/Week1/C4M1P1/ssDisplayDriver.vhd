@@ -1,22 +1,23 @@
---! \file		C4M1P1.vhdl
+--! \file		ssDisplayDriver.vhd
 --!
---! \brief		
+--! \brief		Seven Segment Display Driver
 --!
---! \author		Uriel Abe Contardi
---! \date       21-07-2024
+--! \author		Uriel Abe Contardi (urielcontardi@hotmail.com)
+--! \date       26-07-2024
 --!
 --! \version    1.0
 --!
+--! \copyright	Copyright (c) 2024 - All Rights reserved.
 --!
 --! \note		Target devices : No specific target
 --! \note		Tool versions  : No specific tool
 --! \note		Dependencies   : No specific dependencies
 --!
---! \ingroup	WCW
+--! \ingroup	None
 --! \warning	None
 --!
 --! \note		Revisions:
---!				- 1.0	21-07-2024
+--!				- 1.0	26-07-2024	<urielcontardi@hotmail.com>
 --!				First revision.
 --------------------------------------------------------------------------
 -- Default libraries
@@ -32,24 +33,20 @@ use ieee.numeric_std.all;
 --------------------------------------------------------------------------
 -- Entity declaration
 --------------------------------------------------------------------------
-Entity C4M1P1 is
-    Port (
-        SW      : in std_logic_vector(7 downto 0);
-        HEX1    : out std_logic_vector(6 downto 0);
-        HEX0    : out std_logic_vector(6 downto 0)
+entity ssDisplayDriver is
+    port (
+        value_in : in std_logic_vector(3 downto 0);
+        driver_o : out std_logic_vector(6 downto 0)
     );
-End entity;
+end entity;
 
---------------------------------------------------------------------------
--- Architecture
---------------------------------------------------------------------------
-Architecture rtl of C4M1P1 is
+architecture rtl of ssDisplayDriver is
 
     --// Function to convert 4-bit binary to 7-segment display
-    Function bin_to_7segment(bin: in std_logic_vector(3 downto 0)) 
-    return std_logic_vector is
-        variable seg: std_logic_vector(6 downto 0);
-    Begin
+    function bin_to_7segment(bin : in std_logic_vector(3 downto 0))
+        return std_logic_vector is
+        variable seg : std_logic_vector(6 downto 0);
+    begin
         case bin is
             when "0000" => seg := "0111111"; -- 0
             when "0001" => seg := "0000110"; -- 1
@@ -62,18 +59,14 @@ Architecture rtl of C4M1P1 is
             when "1000" => seg := "1111111"; -- 8
             when "1001" => seg := "1101111"; -- 9
             when others => seg := "0000000"; -- don't care (all segments off)
-        End case;
+        end case;
 
-        Return seg;
+        return seg;
 
-    End function;
+    end function;
 
-Begin
+begin
 
-    --------------------------------------------------------------------------
-    -- Assign Logic
-    --------------------------------------------------------------------------
-    HEX1 <= bin_to_7segment(SW(7 downto 4));
-    HEX0 <= bin_to_7segment(SW(3 downto 0));
+    driver_o <= bin_to_7segment(value_in);
 
-End architecture;
+end architecture;

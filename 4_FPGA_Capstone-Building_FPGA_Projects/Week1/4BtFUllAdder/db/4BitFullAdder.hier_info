@@ -91,11 +91,11 @@ HEX5[6] <= <GND>
 HEX5[7] <= <GND>
 KEY[0] => ~NO_FANOUT~
 KEY[1] => ~NO_FANOUT~
-LEDR[0] <= FourBitFUllAdder:u1.LEDR
-LEDR[1] <= FourBitFUllAdder:u1.LEDR
-LEDR[2] <= FourBitFUllAdder:u1.LEDR
-LEDR[3] <= FourBitFUllAdder:u1.LEDR
-LEDR[4] <= FourBitFUllAdder:u1.LEDR
+LEDR[0] <= FourBitFUllAdder:u1.s
+LEDR[1] <= FourBitFUllAdder:u1.s
+LEDR[2] <= FourBitFUllAdder:u1.s
+LEDR[3] <= FourBitFUllAdder:u1.s
+LEDR[4] <= FourBitFUllAdder:u1.cout
 LEDR[5] <= <GND>
 LEDR[6] <= <GND>
 LEDR[7] <= <GND>
@@ -187,20 +187,20 @@ GPIO[35] <> <UNC>
 
 
 |DE10_LITE_Golden_Top|FourBitFUllAdder:u1
-SW[0] => fulladder:FUllAdderGen:0:FullAdderInst.b
-SW[1] => fulladder:FUllAdderGen:1:FullAdderInst.b
-SW[2] => fulladder:FUllAdderGen:2:FullAdderInst.b
-SW[3] => fulladder:FUllAdderGen:3:FullAdderInst.b
-SW[4] => fulladder:FUllAdderGen:0:FullAdderInst.a
-SW[5] => fulladder:FUllAdderGen:1:FullAdderInst.a
-SW[6] => fulladder:FUllAdderGen:2:FullAdderInst.a
-SW[7] => fulladder:FUllAdderGen:3:FullAdderInst.a
-SW[8] => fulladder:FUllAdderGen:0:FullAdderInst.ci
-LEDR[0] <= fulladder:FUllAdderGen:0:FullAdderInst.s
-LEDR[1] <= fulladder:FUllAdderGen:1:FullAdderInst.s
-LEDR[2] <= fulladder:FUllAdderGen:2:FullAdderInst.s
-LEDR[3] <= fulladder:FUllAdderGen:3:FullAdderInst.s
-LEDR[4] <= fulladder:FUllAdderGen:3:FullAdderInst.co
+a[0] => fulladder:FUllAdderGen:0:FullAdderInst.a
+a[1] => fulladder:FUllAdderGen:1:FullAdderInst.a
+a[2] => fulladder:FUllAdderGen:2:FullAdderInst.a
+a[3] => fulladder:FUllAdderGen:3:FullAdderInst.a
+b[0] => fulladder:FUllAdderGen:0:FullAdderInst.b
+b[1] => fulladder:FUllAdderGen:1:FullAdderInst.b
+b[2] => fulladder:FUllAdderGen:2:FullAdderInst.b
+b[3] => fulladder:FUllAdderGen:3:FullAdderInst.b
+cin => fulladder:FUllAdderGen:0:FullAdderInst.ci
+s[0] <= fulladder:FUllAdderGen:0:FullAdderInst.s
+s[1] <= fulladder:FUllAdderGen:1:FullAdderInst.s
+s[2] <= fulladder:FUllAdderGen:2:FullAdderInst.s
+s[3] <= fulladder:FUllAdderGen:3:FullAdderInst.s
+cout <= fulladder:FUllAdderGen:3:FullAdderInst.co
 
 
 |DE10_LITE_Golden_Top|FourBitFUllAdder:u1|FullAdder:\FUllAdderGen:0:FullAdderInst

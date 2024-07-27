@@ -35,8 +35,11 @@ use ieee.numeric_std.all;
 --------------------------------------------------------------------------
 Entity FourBitFUllAdder is
     Port (
-        SW      : in std_logic_vector(8 downto 0);
-        LEDR    : out std_logic_vector(4 downto 0)
+        a    : in std_logic_vector(3 downto 0);
+        b    : in std_logic_vector(3 downto 0);
+        cin  : in std_logic;
+        s    : out std_logic_vector(3 downto 0);
+        cout : out std_logic
     );
 End entity;
 
@@ -45,41 +48,36 @@ End entity;
 --------------------------------------------------------------------------
 Architecture rtl of FourBitFUllAdder is
 
-    signal cin  : std_logic_vector(3 downto 0);
-    signal co   : std_logic_vector(3 downto 0);
-    signal a    : std_logic_vector(3 downto 0);
-    signal b    : std_logic_vector(3 downto 0);
-    signal s    : std_logic_vector(3 downto 0);
+    signal ci, co   : std_logic_vector(3 downto 0);
 
 Begin
 
     --------------------------------------------------------------------------
+    -- Assign Output
+    --------------------------------------------------------------------------
+    cout <= co(3);
+
+    --------------------------------------------------------------------------
     -- Adder Circuit
     --------------------------------------------------------------------------
-    -- Inputs to adders
-    a       <= SW(7 downto 4);
-    b       <= SW(3 downto 0);
-    cin(0)  <= SW(8);
-
-    -- Output of adders
-    LEDR(4) <= co(3);
-    LEDR(3 downto 0) <= s;
-
     -- Instance Adders
     FUllAdderGen : for ii in 0 to 3 generate
         FullAdderInst : Entity work.FullAdder
             Port map(
                 a  => a(ii),
                 b  => b(ii),
-                ci => cin(ii),
+                ci => ci(ii),
                 s  => s(ii),
                 co => co(ii)
             );
     end generate;
 
+    -- Inputs to adders
+    ci(0)  <= cin;
+
     -- Internal Signals
-    cin(1) <= co(0);
-    cin(2) <= co(1);
-    cin(3) <= co(2);
+    ci(1) <= co(0);
+    ci(2) <= co(1);
+    ci(3) <= co(2);
 
 End architecture;

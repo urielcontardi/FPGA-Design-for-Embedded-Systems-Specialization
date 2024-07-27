@@ -1,5 +1,5 @@
 Analysis & Synthesis report for C4M1P2
-Fri Jul 26 18:12:56 2024
+Fri Jul 26 22:56:59 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -15,10 +15,9 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Port Connectivity Checks: "C4M1P2:u1|C4M1P1:HEX7SEGDriver"
- 10. Port Connectivity Checks: "C4M1P2:u1"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -45,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul 26 18:12:56 2024          ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 26 22:56:59 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; C4M1P2                                         ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                           ;
@@ -171,8 +170,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                                                    ; Library ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../C4M1P1/C4M1P1.vhdl            ; yes             ; User VHDL File         ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/C4M1P1.vhdl            ;         ;
+; ../C4M1P1/ssDisplayDriver.vhd    ; yes             ; User VHDL File         ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/ssDisplayDriver.vhd    ;         ;
 ; C4M1P2.vhd                       ; yes             ; User VHDL File         ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd             ;         ;
-; C4M1P1.vhdl                      ; yes             ; User VHDL File         ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P1.vhdl            ;         ;
 ; DE10_LITE_Golden_Top.v           ; yes             ; User Verilog HDL File  ; /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v ;         ;
 +----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
@@ -209,15 +209,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                            ;
-+------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                  ; Entity Name          ; Library Name ;
-+------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------+----------------------+--------------+
-; |DE10_LITE_Golden_Top        ; 8 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 185  ; 0            ; 0          ; |DE10_LITE_Golden_Top                                ; DE10_LITE_Golden_Top ; work         ;
-;    |C4M1P2:u1|               ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|C4M1P2:u1                      ; C4M1P2               ; work         ;
-;       |C4M1P1:HEX7SEGDriver| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|C4M1P2:u1|C4M1P1:HEX7SEGDriver ; C4M1P1               ; work         ;
-+------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------+----------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                              ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                            ; Entity Name          ; Library Name ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------+----------------------+--------------+
+; |DE10_LITE_Golden_Top                ; 8 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 185  ; 0            ; 0          ; |DE10_LITE_Golden_Top                                                          ; DE10_LITE_Golden_Top ; work         ;
+;    |C4M1P2:u1|                       ; 8 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|C4M1P2:u1                                                ; C4M1P2               ; work         ;
+;       |C4M1P1:HEX7SEGDriver|         ; 7 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|C4M1P2:u1|C4M1P1:HEX7SEGDriver                           ; C4M1P1               ; work         ;
+;          |ssDisplayDriver:HEX0_Inst| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DE10_LITE_Golden_Top|C4M1P2:u1|C4M1P1:HEX7SEGDriver|ssDisplayDriver:HEX0_Inst ; ssDisplayDriver      ; work         ;
++--------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -238,21 +239,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +------------------------------------------------------------+
 ; Port Connectivity Checks: "C4M1P2:u1|C4M1P1:HEX7SEGDriver" ;
-+----------+-------+----------+------------------------------+
-; Port     ; Type  ; Severity ; Details                      ;
-+----------+-------+----------+------------------------------+
-; sw[7..5] ; Input ; Info     ; Stuck at GND                 ;
-+----------+-------+----------+------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "C4M1P2:u1"                                                                                                                                     ;
-+---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                                                                                                                      ;
-+---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; sysclk  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; reset_n ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+---------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
++-----------+-------+----------+-----------------------------+
+; Port      ; Type  ; Severity ; Details                     ;
++-----------+-------+----------+-----------------------------+
+; bin[7..5] ; Input ; Info     ; Stuck at GND                ;
++-----------+-------+----------+-----------------------------+
 
 
 +-----------------------------------------------------+
@@ -289,16 +280,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Jul 26 18:12:47 2024
+    Info: Processing started: Fri Jul 26 22:56:51 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off C4M1P2 -c C4M1P2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/C4M1P1.vhdl
+    Info (12022): Found design unit 1: C4M1P1-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/C4M1P1.vhdl Line: 46
+    Info (12023): Found entity 1: C4M1P1 File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/C4M1P1.vhdl Line: 35
+Info (12021): Found 2 design units, including 1 entities, in source file /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/ssDisplayDriver.vhd
+    Info (12022): Found design unit 1: ssDisplayDriver-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/ssDisplayDriver.vhd Line: 43
+    Info (12023): Found entity 1: ssDisplayDriver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/ssDisplayDriver.vhd Line: 36
 Info (12021): Found 2 design units, including 1 entities, in source file C4M1P2.vhd
-    Info (12022): Found design unit 1: C4M1P2-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd Line: 50
+    Info (12022): Found design unit 1: C4M1P2-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd Line: 47
     Info (12023): Found entity 1: C4M1P2 File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd Line: 36
-Info (12021): Found 2 design units, including 1 entities, in source file C4M1P1.vhdl
-    Info (12022): Found design unit 1: C4M1P1-rtl File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P1.vhdl Line: 46
-    Info (12023): Found entity 1: C4M1P1 File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P1.vhdl Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file DE10_LITE_Golden_Top.v
     Info (12023): Found entity 1: DE10_LITE_Golden_Top File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v Line: 29
 Info (12127): Elaborating entity "DE10_LITE_Golden_Top" for the top level hierarchy
@@ -325,8 +319,8 @@ Warning (10034): Output port "VGA_VS" at DE10_LITE_Golden_Top.v(100) has no driv
 Warning (10034): Output port "GSENSOR_CS_N" at DE10_LITE_Golden_Top.v(105) has no driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v Line: 105
 Warning (10034): Output port "GSENSOR_SCLK" at DE10_LITE_Golden_Top.v(107) has no driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v Line: 107
 Info (12128): Elaborating entity "C4M1P2" for hierarchy "C4M1P2:u1" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v Line: 143
-Info (12128): Elaborating entity "C4M1P1" for hierarchy "C4M1P2:u1|C4M1P1:HEX7SEGDriver" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd Line: 102
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "C4M1P1" for hierarchy "C4M1P2:u1|C4M1P1:HEX7SEGDriver" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd Line: 99
+Info (12128): Elaborating entity "ssDisplayDriver" for hierarchy "C4M1P2:u1|C4M1P1:HEX7SEGDriver|ssDisplayDriver:HEX0_Inst" File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/C4M1P1.vhdl Line: 52
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v Line: 52
     Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v Line: 52
@@ -508,10 +502,10 @@ Info (21057): Implemented 193 device resources after synthesis - the final resou
     Info (21059): Implemented 97 output pins
     Info (21060): Implemented 71 bidirectional pins
     Info (21061): Implemented 8 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 197 warnings
-    Info: Peak virtual memory: 451 megabytes
-    Info: Processing ended: Fri Jul 26 18:12:56 2024
-    Info: Elapsed time: 00:00:09
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 196 warnings
+    Info: Peak virtual memory: 448 megabytes
+    Info: Processing ended: Fri Jul 26 22:56:59 2024
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:33
 
 

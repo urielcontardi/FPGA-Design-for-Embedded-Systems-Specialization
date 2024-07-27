@@ -1,5 +1,5 @@
 Flow report for C4M1P2
-Fri Jul 26 18:13:15 2024
+Fri Jul 26 22:57:18 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Fri Jul 26 18:13:11 2024          ;
+; Flow Status                        ; Successful - Fri Jul 26 22:57:14 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; C4M1P2                                         ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                           ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/26/2024 18:12:48 ;
+; Start date & time ; 07/26/2024 22:56:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; C4M1P2              ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+----------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name          ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+----------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 37393277571503.172202836810426         ; --            ; --                   ; --         ;
+; COMPILER_SIGNATURE_ID               ; 37393277571503.172204541146039         ; --            ; --                   ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                   ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                   ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE10_LITE_Golden_Top ; Top        ;
@@ -96,11 +96,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 451 MB              ; 00:00:33                           ;
-; Fitter               ; 00:00:09     ; 1.0                     ; 1860 MB             ; 00:00:13                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 448 MB              ; 00:00:33                           ;
+; Fitter               ; 00:00:09     ; 1.0                     ; 1864 MB             ; 00:00:12                           ;
 ; Assembler            ; 00:00:03     ; 1.0                     ; 371 MB              ; 00:00:03                           ;
 ; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 621 MB              ; 00:00:03                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:52                           ;
+; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:51                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
