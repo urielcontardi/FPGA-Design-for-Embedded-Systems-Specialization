@@ -137,7 +137,7 @@ module DE10_LITE_Golden_Top(
   wire [6:0] HEX0_internal;
 
   C4M1P1 u1 (
-           .bin(SW[7:0]),
+           .SW(SW[7:0]),
            .HEX1(HEX1_internal),
            .HEX0(HEX0_internal)
          );

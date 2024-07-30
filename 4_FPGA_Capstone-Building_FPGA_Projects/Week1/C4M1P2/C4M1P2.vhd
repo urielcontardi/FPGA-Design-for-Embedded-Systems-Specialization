@@ -35,7 +35,7 @@ use ieee.numeric_std.all;
 --------------------------------------------------------------------------
 Entity C4M1P2 is
     Port (
-        bin      : in std_logic_vector(3 downto 0);
+        SW      : in std_logic_vector(3 downto 0);
         HEX1    : out std_logic_vector(6 downto 0);
         HEX0    : out std_logic_vector(6 downto 0)
     );
@@ -49,13 +49,35 @@ Architecture rtl of C4M1P2 is
     signal V                    : std_logic_vector(3 downto 0);
     signal Z                    : std_logic;
     signal A                    : std_logic_vector(3 downto 0);
-    signal hex7Seg0, hex7Seg1   : std_logic_vector(3 downto 0);
-    signal hex7Seg              : std_logic_vector(7 downto 0);
+    signal d0, d1               : std_logic_vector(3 downto 0);
+
+    --// Function to convert 4-bit binary to 7-segment display
+    function bin_to_7segment(bin : in std_logic_vector(3 downto 0))
+        return std_logic_vector is
+        variable seg : std_logic_vector(6 downto 0);
+    begin
+        case bin is
+            when "0000" => seg := "0111111"; -- 0
+            when "0001" => seg := "0000110"; -- 1
+            when "0010" => seg := "1011011"; -- 2
+            when "0011" => seg := "1001111"; -- 3
+            when "0100" => seg := "1100110"; -- 4
+            when "0101" => seg := "1101101"; -- 5
+            when "0110" => seg := "1111101"; -- 6
+            when "0111" => seg := "0000111"; -- 7
+            when "1000" => seg := "1111111"; -- 8
+            when "1001" => seg := "1101111"; -- 9
+            when others => seg := "0000000"; -- don't care (all segments off)
+        end case;
+
+        return seg;
+
+    end function;
 
 Begin
 
     -- Internal Signal
-    V <= bin;
+    V <= SW;
 
     --------------------------------------------------------------------------
     -- Comparator > 9
@@ -88,21 +110,15 @@ Begin
     -- Segments Control
     --------------------------------------------------------------------------
     -- Z signal control hex7Seg1
-    hex7Seg1 <= "000" & Z;
+    d1 <= "000" & Z;
 
     -- Mux to hex7Seg0
-    hex7Seg0 <= A when Z = '1' else V;
+    d0 <= A when Z = '1' else V;
 
     --------------------------------------------------------------------------
     -- Hex to 7-seg Driver
     --------------------------------------------------------------------------
-    HEX7SEGDriver : Entity work.C4M1P1
-    Port map(
-        bin      => hex7Seg,
-        HEX1    => HEX1,
-        HEX0    => HEX0
-    );
-
-    hex7Seg <= hex7Seg1 & hex7Seg0;
+    HEX0 <= bin_to_7segment(d0);
+    HEX1 <= bin_to_7segment(d1);
 
 End architecture;
