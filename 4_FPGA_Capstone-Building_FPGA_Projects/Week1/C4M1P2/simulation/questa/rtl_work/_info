@@ -1,0 +1,102 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11e MIXED_VERSIONS
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/simulation/questa
+T_opt
+!s110 1722439115
+V26f9FliF^kGP25Bf`M7?43
+04 6 3 work c4m1p2 rtl 1
+=1-d09466de7eed-66aa55ca-250-50f0
+!s124 OEM10U1 
+Z2 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1722439130
+VGE9VNc<9Ji5>YOn?NQ03_2
+04 20 4 work DE10_LITE_Golden_Top fast 0
+=1-d09466de7eed-66aa55d9-2b8-3cb8
+!s124 OEM10U2 
+R2
+R3
+n@_opt1
+R4
+Ec4m1p2
+Z5 w1722438372
+Z6 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R1
+Z9 8D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd
+Z10 FD:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd
+l0
+L36 1
+VMMO;c::N0:Mb`b`;HW2R>0
+!s100 SH5[hRH^f>dEXHU7a=E6F3
+Z11 OL;C;2021.2;73
+31
+Z12 !s110 1722439113
+!i10b 1
+Z13 !s108 1722439113.000000
+Z14 !s90 -reportprogress|300|-93|-work|work|D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd|
+Z15 !s107 D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/C4M1P2.vhd|
+!i113 0
+Z16 o-93 -work work
+Z17 tExplicit 1 CvgOpt 0
+Artl
+R6
+R7
+R8
+DEx4 work 6 c4m1p2 0 22 MMO;c::N0:Mb`b`;HW2R>0
+!i122 2
+l77
+L47 78
+VYD8^Ig0C_I4f5D588bg`10
+!s100 L0mol?Q9i:H^KPmZ<B@W50
+R11
+31
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+vDE10_LITE_Golden_Top
+R12
+!i10b 1
+!s100 G^3W7[Xh0ifBcc[3QUg3?3
+I1ZPAbJgG]H:W<D6bM21M01
+R1
+R5
+8D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v
+FD:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v
+!i122 0
+L0 29 122
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2021.2;73
+r1
+!s85 0
+31
+R13
+!s107 D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2|D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2/DE10_LITE_Golden_Top.v|
+!i113 0
+o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P2 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@d@e10_@l@i@t@e_@golden_@top
