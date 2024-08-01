@@ -1,5 +1,5 @@
 Assembler report for C4M1P1
-Tue Jul 30 12:29:53 2024
+Thu Aug  1 12:25:09 2024
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/contardii/Desktop/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/output_files/C4M1P1.sof
+  5. Assembler Device Options: D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/output_files/C4M1P1.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Jul 30 12:29:53 2024 ;
+; Assembler Status      ; Successful - Thu Aug  1 12:25:09 2024 ;
 ; Revision Name         ; C4M1P1                                ;
 ; Top-level Entity Name ; DE10_LITE_Golden_Top                  ;
 ; Family                ; MAX 10                                ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/contardii/Desktop/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/output_files/C4M1P1.sof ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                               ;
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                               ;
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/output_files/C4M1P1.sof ;
++-----------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/contardii/Desktop/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/output_files/C4M1P1.sof ;
-+----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                                                         ;
-+----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x0027C433                                                                                                                                                      ;
-; Checksum       ; 0x0027C433                                                                                                                                                      ;
-+----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/C4M1P1/output_files/C4M1P1.sof ;
++----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                          ;
++----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0027C433                                                                                                                                       ;
+; Checksum       ; 0x0027C433                                                                                                                                       ;
++----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,15 +78,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Tue Jul 30 12:29:50 2024
+    Info: Processing started: Thu Aug  1 12:25:06 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off C4M1P1 -c C4M1P1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4718 megabytes
-    Info: Processing ended: Tue Jul 30 12:29:53 2024
+    Info: Peak virtual memory: 4714 megabytes
+    Info: Processing ended: Thu Aug  1 12:25:09 2024
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
 
 

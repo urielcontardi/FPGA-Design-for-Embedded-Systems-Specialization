@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition"
 
-// DATE "07/30/2024 12:23:43"
+// DATE "08/01/2024 12:25:17"
 
 // 
 // Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -75,7 +75,7 @@ output 	DRAM_CAS_N;
 output 	DRAM_CKE;
 output 	DRAM_CLK;
 output 	DRAM_CS_N;
-inout 	[15:0] DRAM_DQ;
+output 	[15:0] DRAM_DQ;
 output 	DRAM_LDQM;
 output 	DRAM_RAS_N;
 output 	DRAM_UDQM;
@@ -97,11 +97,11 @@ output 	VGA_VS;
 output 	GSENSOR_CS_N;
 input 	[2:1] GSENSOR_INT;
 output 	GSENSOR_SCLK;
-inout 	GSENSOR_SDI;
-inout 	GSENSOR_SDO;
-inout 	[15:0] ARDUINO_IO;
-inout 	ARDUINO_RESET_N;
-inout 	[35:0] GPIO;
+output 	GSENSOR_SDI;
+output 	GSENSOR_SDO;
+output 	[15:0] ARDUINO_IO;
+output 	ARDUINO_RESET_N;
+output 	[35:0] GPIO;
 
 // Design Ports Information
 // ADC_CLK_10	=>  Location: PIN_N5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default

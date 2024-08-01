@@ -1,9 +1,9 @@
---! \file		BCD_Adder.vhd
+--! \file		C4M1P5.vhd
 --!
 --! \brief		
 --!
 --! \author		Uriel Abe Contardi (urielcontardi@hotmail.com)
---! \date       26-07-2024
+--! \date       27-07-2024
 --!
 --! \version    1.0
 --!
@@ -17,8 +17,9 @@
 --! \warning	None
 --!
 --! \note		Revisions:
---!				- 1.0	26-07-2024	<urielcontardi@hotmail.com>
+--!				- 1.0	27-07-2024	<urielcontardi@hotmail.com>
 --!				First revision.
+
 --------------------------------------------------------------------------
 -- Default libraries
 --------------------------------------------------------------------------
@@ -33,7 +34,7 @@ use ieee.numeric_std.all;
 --------------------------------------------------------------------------
 -- Entity declaration
 --------------------------------------------------------------------------
-Entity BCD_Adder is
+Entity C4M1P5 is
     Port (
         x           : in std_logic_vector(3 downto 0);
         y           : in std_logic_vector(3 downto 0);
@@ -49,82 +50,71 @@ End entity;
 --------------------------------------------------------------------------
 -- Architecture
 --------------------------------------------------------------------------
-Architecture rtl of BCD_Adder is
+Architecture rtl of C4M1P5 is
 
-    signal result : std_logic_vector(4 downto 0);
-    signal Z                    : std_logic;
-    signal A                    : std_logic_vector(3 downto 0);
+    signal result : unsigned(4 downto 0);
     signal hex7Seg0, hex7Seg1   : std_logic_vector(3 downto 0);
-    signal hex7Seg              : std_logic_vector(7 downto 0);
+
+    --// Function to convert 4-bit binary to 7-segment display
+    function bin_to_7segment(bin : in std_logic_vector(3 downto 0))
+        return std_logic_vector is
+        variable seg : std_logic_vector(6 downto 0);
+    begin
+        case bin is
+            when "0000" => seg := "0111111"; -- 0
+            when "0001" => seg := "0000110"; -- 1
+            when "0010" => seg := "1011011"; -- 2
+            when "0011" => seg := "1001111"; -- 3
+            when "0100" => seg := "1100110"; -- 4
+            when "0101" => seg := "1101101"; -- 5
+            when "0110" => seg := "1111101"; -- 6
+            when "0111" => seg := "0000111"; -- 7
+            when "1000" => seg := "1111111"; -- 8
+            when "1001" => seg := "1101111"; -- 9
+            when others => seg := "0000000"; -- don't care (all segments off)
+        end case;
+
+        return seg;
+
+    end function;
 
 Begin
 
     --------------------------------------------------------------------------
     -- Adder BLock
     --------------------------------------------------------------------------
-    FOurBitAdderInst : Entity work.FourBitFUllAdder
-    Port map(
-        a    => x,
-        b    => y,
-        cin  => cin,
-        s    => result(3 downto 0),
-        cout => result(4)
-    );
+    Adder_comb : process(x,y,cin)
+        variable sum : unsigned(4 downto 0);
+        variable aux : std_logic_vector(0 downto 0);
+    begin
+        aux(0) := cin;
+        sum := unsigned("0"&x) + unsigned("0"&y) + unsigned("0000"&aux);
+
+        if sum >= 10 then
+            hex7Seg1 <= "0001";
+            hex7Seg0 <= std_logic_vector(sum - 10)(hex7Seg0'range);
+        else
+            hex7Seg1 <= "0000";
+            hex7Seg0 <= std_logic_vector(sum)(hex7Seg0'range);
+        end if;
+
+    end process;
+    
 
     --------------------------------------------------------------------------
     -- Display Driver for X Y
     --------------------------------------------------------------------------
-    XDispDriver_Inst : entity work.ssDisplayDriver
-    port map(
-        value_in => x,
-        driver_o => xDisp_o
-    );
-
-    YDispDriver_Inst : entity work.ssDisplayDriver
-    port map(
-        value_in => y,
-        driver_o => yDisp_o
-    );
+    xDisp_o <= bin_to_7segment(x);
+    yDisp_o <= bin_to_7segment(y);
 
     error_o <= '1' when (x >= "1010" OR y >= "1010") else '0';
 
     --------------------------------------------------------------------------
     -- Display Driver for Result
     --------------------------------------------------------------------------
-    --Z <= (result(3) AND result(1)) OR (result(3) AND result(2));
-    Z <= '1' when result >= "01010" else '0';
-
-    -- Circuit A
-    process(result)
-    begin
-        case result is
-            when "01010" => A <= "0000";
-            when "01011" => A <= "0001";
-            when "01100" => A <= "0010";
-            when "01101" => A <= "0011";
-            when "01110" => A <= "0100";
-            when "01111" => A <= "0101";
-            when "10000" => A <= "0110";
-            when "10001" => A <= "0111";
-            when "10010" => A <= "1000";
-            when "10011" => A <= "1001";
-            when others => A <= "0000"; -- Default case
-        end case;
-    end process;
-
-    -- Segments Control
-    hex7Seg1 <= "000" & Z; -- Z signal control hex7Seg1
-    hex7Seg0 <= A when Z = '1' else result(3 downto 0); -- Mux to hex7Seg0
-
     -- Hex to 7-seg Driver
-    HEX7SEGDriver : Entity work.C4M1P1
-    Port map(
-        bin      => hex7Seg,
-        HEX1    => resDisp1_o,
-        HEX0    => resDisp0_o
-    );
-
-    hex7Seg <= hex7Seg1 & hex7Seg0;
+    resDisp1_o <= bin_to_7segment(hex7Seg1);
+    resDisp0_o <= bin_to_7segment(hex7Seg0);
 
     
 End architecture;
