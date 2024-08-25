@@ -1,5 +1,5 @@
 Fitter report for DE10_LITE_Small
-Wed Jul 24 19:22:43 2024
+Sat Aug 24 20:43:54 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Jul 24 19:22:43 2024          ;
+; Fitter Status                      ; Successful - Sat Aug 24 20:43:54 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; DE10_LITE_Small                                ;
 ; Top-level Entity Name              ; DE10_LITE_Small                                ;
@@ -1628,12 +1628,12 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.22 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (169177): 9 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
     Info (169178): Pin ADC_CLK_10 uses I/O standard 3.3-V LVTTL at N5 File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 9
     Info (169178): Pin KEY[1] uses I/O standard 3.3 V Schmitt Trigger at A7 File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 23
@@ -1649,10 +1649,10 @@ Warning (169064): Following 2 pins have no output enable or a GND or VCC output 
     Info (169065): Pin GSENSOR_SDI has a permanently disabled output enable File: /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.v Line: 35
 Info (144001): Generated suppressed messages file /home/urielcontardi/Desktop/Projects/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week1/DE10_LITE_Small/DE10_LITE_Small.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 1862 megabytes
-    Info: Processing ended: Wed Jul 24 19:22:43 2024
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 1878 megabytes
+    Info: Processing ended: Sat Aug 24 20:43:55 2024
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +----------------------------+

@@ -1,5 +1,5 @@
 Flow report for DE10_LITE_Default
-Sun Jul 21 09:44:08 2024
+Sat Aug 24 20:36:12 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sun Jul 21 09:44:01 2024          ;
+; Flow Status                        ; Successful - Sat Aug 24 20:36:06 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; DE10_LITE_Default                              ;
 ; Top-level Entity Name              ; DE10_LITE_Default                              ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/21/2024 09:43:19 ;
+; Start date & time ; 08/24/2024 20:35:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE10_LITE_Default   ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 37393277571503.172156579939593         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 158527713792738.172454252735155        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; VGA_Audio_PLL_bb.v                     ; --            ; --          ; --         ;
@@ -101,11 +101,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 483 MB              ; 00:00:38                           ;
-; Fitter               ; 00:00:24     ; 1.3                     ; 1868 MB             ; 00:00:47                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 383 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.5                     ; 647 MB              ; 00:00:07                           ;
-; Total                ; 00:00:43     ; --                      ; --                  ; 00:01:35                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 485 MB              ; 00:00:37                           ;
+; Fitter               ; 00:00:21     ; 1.3                     ; 1872 MB             ; 00:00:45                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 399 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.7                     ; 686 MB              ; 00:00:06                           ;
+; Total                ; 00:00:39     ; --                      ; --                  ; 00:01:31                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
