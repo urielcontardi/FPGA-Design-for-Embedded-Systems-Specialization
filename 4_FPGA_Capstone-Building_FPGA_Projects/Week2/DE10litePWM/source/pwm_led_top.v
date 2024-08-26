@@ -15,7 +15,7 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
-// CREATED		"Tue Aug 20 20:06:51 2024"
+// CREATED		"Sun Aug 25 18:30:23 2024"
 
 module pwm_led_top(
 	MAX10_CLK1_50,
@@ -33,43 +33,43 @@ output wire	[0:0] LEDR;
 wire	[2:0] duty_cycle;
 wire	duty_cycle_clk;
 wire	pwm;
+wire	pwm_clk;
 wire	SYNTHESIZED_WIRE_0;
-wire	SYNTHESIZED_WIRE_1;
 
-assign	ARDUINO_IO[0] = SYNTHESIZED_WIRE_1;
-assign	LEDR[0] = SYNTHESIZED_WIRE_1;
+assign	ARDUINO_IO[0] = SYNTHESIZED_WIRE_0;
+assign	LEDR[0] = SYNTHESIZED_WIRE_0;
 
 
 
 
 pwm_pll	b2v_inst(
 	.inclk0(MAX10_CLK1_50),
-	.c0(SYNTHESIZED_WIRE_0),
+	.c0(pwm_clk),
 	.c1(duty_cycle_clk));
 
-assign	SYNTHESIZED_WIRE_1 =  ~pwm;
+assign	SYNTHESIZED_WIRE_0 =  ~pwm;
 
 
 debouncer	b2v_inst3(
 	.noisy(SW[0]),
-	.clk(duty_cycle_clk)
-	);
+	.clk(duty_cycle_clk),
+	.debounced(duty_cycle[0]));
 
 
 debouncer	b2v_inst4(
 	.noisy(SW[1]),
-	.clk(duty_cycle_clk)
-	);
+	.clk(duty_cycle_clk),
+	.debounced(duty_cycle[1]));
 
 
 debouncer	b2v_inst5(
 	.noisy(SW[2]),
-	.clk(duty_cycle_clk)
-	);
+	.clk(duty_cycle_clk),
+	.debounced(duty_cycle[2]));
 
 
 pwm_gen	b2v_inst6(
-	.clk(SYNTHESIZED_WIRE_0),
+	.clk(pwm_clk),
 	.duty_cycle(duty_cycle),
 	.pwm(pwm));
 

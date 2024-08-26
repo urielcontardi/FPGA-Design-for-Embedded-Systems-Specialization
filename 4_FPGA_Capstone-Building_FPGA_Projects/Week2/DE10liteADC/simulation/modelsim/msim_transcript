@@ -1,0 +1,305 @@
+# Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do pwm_led_top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/AlteraPrj/DE10litePWM/source {C:/AlteraPrj/DE10litePWM/source/pwm_led_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:29:32 on Sep 23,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/AlteraPrj/DE10litePWM/source" C:/AlteraPrj/DE10litePWM/source/pwm_led_top.v 
+# -- Compiling module pwm_led_top
+# 
+# Top level modules:
+# 	pwm_led_top
+# End time: 15:29:33 on Sep 23,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/AlteraPrj/DE10litePWM/source {C:/AlteraPrj/DE10litePWM/source/pwm_gen.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:29:33 on Sep 23,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/AlteraPrj/DE10litePWM/source" C:/AlteraPrj/DE10litePWM/source/pwm_gen.v 
+# -- Compiling module pwm_gen
+# 
+# Top level modules:
+# 	pwm_gen
+# End time: 15:29:33 on Sep 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/AlteraPrj/DE10litePWM/source {C:/AlteraPrj/DE10litePWM/source/debouncer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:29:33 on Sep 23,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/AlteraPrj/DE10litePWM/source" C:/AlteraPrj/DE10litePWM/source/debouncer.v 
+# -- Compiling module debouncer
+# 
+# Top level modules:
+# 	debouncer
+# End time: 15:29:33 on Sep 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/AlteraPrj/DE10litePWM {C:/AlteraPrj/DE10litePWM/pwm_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:29:33 on Sep 23,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/AlteraPrj/DE10litePWM" C:/AlteraPrj/DE10litePWM/pwm_pll.v 
+# -- Compiling module pwm_pll
+# 
+# Top level modules:
+# 	pwm_pll
+# End time: 15:29:33 on Sep 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/AlteraPrj/DE10litePWM/db {C:/AlteraPrj/DE10litePWM/db/pwm_pll_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:29:33 on Sep 23,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/AlteraPrj/DE10litePWM/db" C:/AlteraPrj/DE10litePWM/db/pwm_pll_altpll.v 
+# -- Compiling module pwm_pll_altpll
+# 
+# Top level modules:
+# 	pwm_pll_altpll
+# End time: 15:29:33 on Sep 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.pwm_led_top
+# vsim work.pwm_led_top 
+# Start time: 15:31:34 on Sep 23,2017
+# Loading work.pwm_led_top
+# Loading work.pwm_pll
+# ** Error: (vsim-3033) C:/AlteraPrj/DE10litePWM/pwm_pll.v(58): Instantiation of 'altpll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /pwm_led_top/b2v_inst File: C:/AlteraPrj/DE10litePWM/pwm_pll.v
+#         Searched libraries:
+#             C:/AlteraPrj/DE10litePWM/simulation/modelsim/rtl_work
+# Loading work.debouncer
+# Loading work.pwm_gen
+# Error loading design
+vsim work.pwm_pll_altpll
+# vsim work.pwm_pll_altpll 
+# Start time: 15:32:46 on Sep 23,2017
+# Loading work.pwm_pll_altpll
+# ** Error: (vsim-3033) C:/AlteraPrj/DE10litePWM/db/pwm_pll_altpll.v(47): Instantiation of 'fiftyfivenm_pll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /pwm_pll_altpll File: C:/AlteraPrj/DE10litePWM/db/pwm_pll_altpll.v
+#         Searched libraries:
+#             C:/AlteraPrj/DE10litePWM/simulation/modelsim/rtl_work
+# Error loading design
+vsim altera_mf.altpll(behavior)
+# vsim altera_mf.altpll(behavior) 
+# Start time: 15:35:55 on Sep 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.mf_pllpack(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altpll(behavior)
+# ** Fatal: (vsim-3350) Generic "inclk0_input_frequency" has not been given a value.
+#    Time: 0 ps  Iteration: 0  Instance: /altpll File: C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../altera/vhdl/src/altera_mf/altera_mf.vhd Line: 17260
+# FATAL ERROR while loading design
+# Error loading design
+vlog -vlog01compat -work work +incdir+C:/AlteraPrj/DE10litePWM/source C:/AlteraPrj/DE10litePWM/source/pwm_led_top.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:40 on Sep 23,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/AlteraPrj/DE10litePWM/source" C:/AlteraPrj/DE10litePWM/source/pwm_led_top.v 
+# -- Compiling module pwm_led_top
+# 
+# Top level modules:
+# 	pwm_led_top
+# End time: 15:36:40 on Sep 23,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.pwm_led_top
+# vsim work.pwm_led_top 
+# Start time: 15:36:57 on Sep 23,2017
+# Loading work.pwm_led_top
+# Loading work.pwm_pll
+# ** Error: (vsim-3033) C:/AlteraPrj/DE10litePWM/pwm_pll.v(58): Instantiation of 'altpll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /pwm_led_top/b2v_inst File: C:/AlteraPrj/DE10litePWM/pwm_pll.v
+#         Searched libraries:
+#             C:/AlteraPrj/DE10litePWM/simulation/modelsim/rtl_work
+# Loading work.debouncer
+# Loading work.pwm_gen
+# Error loading design
+# Load canceled
+vsim work.pwm_led_top -t ns -L C:/intelFPGA_lite/16.1/modelsim_ase/modelsim_lib
+# vsim work.pwm_led_top -t ns -L C:/intelFPGA_lite/16.1/modelsim_ase/modelsim_lib 
+# Start time: 15:42:39 on Sep 23,2017
+# Loading work.pwm_led_top
+# Loading work.pwm_pll
+# ** Error: (vsim-3033) C:/AlteraPrj/DE10litePWM/pwm_pll.v(58): Instantiation of 'altpll' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /pwm_led_top/b2v_inst File: C:/AlteraPrj/DE10litePWM/pwm_pll.v
+#         Searched libraries:
+#             C:/intelFPGA_lite/16.1/modelsim_ase/modelsim_lib
+#             C:/AlteraPrj/DE10litePWM/simulation/modelsim/rtl_work
+# Loading work.debouncer
+# Loading work.pwm_gen
+# Error loading design
+vsim work.pwm_led_top
+# vsim work.pwm_led_top 
+# Start time: 15:43:08 on Sep 23,2017
+# Loading work.pwm_led_top
+# Loading work.pwm_pll
+# ** Error: (vsim-3033) C:/AlteraPrj/DE10litePWM/pwm_pll.v(58): Instantiation of 'altpll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /pwm_led_top/b2v_inst File: C:/AlteraPrj/DE10litePWM/pwm_pll.v
+#         Searched libraries:
+#             C:/AlteraPrj/DE10litePWM/simulation/modelsim/rtl_work
+# Loading work.debouncer
+# Loading work.pwm_gen
+# Error loading design
+vsim work.pwm_led_top -L C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf
+# vsim work.pwm_led_top -L C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf 
+# Start time: 15:44:20 on Sep 23,2017
+# Loading work.pwm_led_top
+# Loading work.pwm_pll
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.altpll
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.ALTERA_DEVICE_FAMILIES
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.pll_iobuf
+# Loading work.debouncer
+# Loading work.pwm_gen
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.MF_cycloneiii_pll
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.cda_m_cntr
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.cda_n_cntr
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.cda_scale_cntr
+add wave -position end  sim:/pwm_led_top/ARDUINO_IO
+add wave -position end  sim:/pwm_led_top/LEDR
+add wave -position end  sim:/pwm_led_top/MAX10_CLK1_50
+add wave -position end  sim:/pwm_led_top/SW
+add wave -position end  sim:/pwm_led_top/SYNTHESIZED_WIRE_0
+add wave -position end  sim:/pwm_led_top/duty_cycle
+add wave -position end  sim:/pwm_led_top/duty_cycle_clk
+add wave -position end  sim:/pwm_led_top/pwm
+add wave -position end  sim:/pwm_led_top/pwm_clk
+# Load canceled
+# Load canceled
+# Load canceled
+force -freeze sim:/pwm_led_top/MAX10_CLK1_50 1 0, 0 {10 ps} -r 20
+run
+# ** Error (suppressible): (vsim-8630) /build/swbuild/SJ/nightly/16.1/196/l64/work/modelsim/eda/sim_lib/altera_mf.v(15793): Infinity results from division operation.
+# ** Error (suppressible): (vsim-8630) /build/swbuild/SJ/nightly/16.1/196/l64/work/modelsim/eda/sim_lib/altera_mf.v(15793): Infinity results from division operation.
+# ** Error (suppressible): (vsim-8630) /build/swbuild/SJ/nightly/16.1/196/l64/work/modelsim/eda/sim_lib/altera_mf.v(15793): Infinity results from division operation.
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 1000  Instance: pwm_led_top.b2v_inst.altpll_component.cycloneiii_pll.pll3
+run
+quit -sim
+vsim -L C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf work.pwm_led_top -t ns
+# vsim -L C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf work.pwm_led_top -t ns 
+# Start time: 16:00:48 on Sep 23,2017
+# Loading work.pwm_led_top
+# Loading work.pwm_pll
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.altpll
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.ALTERA_DEVICE_FAMILIES
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.pll_iobuf
+# Loading work.debouncer
+# Loading work.pwm_gen
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.MF_cycloneiii_pll
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.cda_m_cntr
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.cda_n_cntr
+# Loading C:/intelFPGA_lite/16.1/modelsim_ase/altera/verilog/altera_mf.cda_scale_cntr
+add wave -position end  sim:/pwm_led_top/ARDUINO_IO
+add wave -position end  sim:/pwm_led_top/LEDR
+add wave -position end  sim:/pwm_led_top/MAX10_CLK1_50
+add wave -position end  sim:/pwm_led_top/SW
+add wave -position end  sim:/pwm_led_top/SYNTHESIZED_WIRE_0
+add wave -position end  sim:/pwm_led_top/duty_cycle
+add wave -position end  sim:/pwm_led_top/duty_cycle_clk
+add wave -position end  sim:/pwm_led_top/pwm
+add wave -position end  sim:/pwm_led_top/pwm_clk
+force -freeze sim:/pwm_led_top/MAX10_CLK1_50 1 0, 0 {10 ns} -r 20
+force -freeze sim:/pwm_led_top/MAX10_CLK1_50 1 0, 0 {10 ns} -r 20
+run
+# ** Error (suppressible): (vsim-8630) /build/swbuild/SJ/nightly/16.1/196/l64/work/modelsim/eda/sim_lib/altera_mf.v(15793): Infinity results from division operation.
+# ** Error (suppressible): (vsim-8630) /build/swbuild/SJ/nightly/16.1/196/l64/work/modelsim/eda/sim_lib/altera_mf.v(15793): Infinity results from division operation.
+# ** Error (suppressible): (vsim-8630) /build/swbuild/SJ/nightly/16.1/196/l64/work/modelsim/eda/sim_lib/altera_mf.v(15793): Infinity results from division operation.
+# Load canceled
+force -freeze sim:/pwm_led_top/SW 000 0
+run
+run
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 300  Instance: pwm_led_top.b2v_inst.altpll_component.cycloneiii_pll.pll3
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/pwm_led_top/duty_cycle 000 0
+run
+run
+run
+run
+run
+restart -f
+run
+# ** Error (suppressible): (vsim-8630) /build/swbuild/SJ/nightly/16.1/196/l64/work/modelsim/eda/sim_lib/altera_mf.v(15793): Infinity results from division operation.
+# ** Error (suppressible): (vsim-8630) /build/swbuild/SJ/nightly/16.1/196/l64/work/modelsim/eda/sim_lib/altera_mf.v(15793): Infinity results from division operation.
+# ** Error (suppressible): (vsim-8630) /build/swbuild/SJ/nightly/16.1/196/l64/work/modelsim/eda/sim_lib/altera_mf.v(15793): Infinity results from division operation.
+force -freeze sim:/pwm_led_top/MAX10_CLK1_50 1 0, 0 {10 ns} -r 20
+force -freeze sim:/pwm_led_top/duty_cycle_clk 1 0, 0 {1500 ns} -r 3000
+force -freeze sim:/pwm_led_top/MAX10_CLK1_50 1 0, 0 {10 ns} -r 20
+run
+force -freeze sim:/pwm_led_top/SW 000 0
+run
+run
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 400  Instance: pwm_led_top.b2v_inst.altpll_component.cycloneiii_pll.pll3
+force -freeze sim:/pwm_led_top/SW 001 0
+run
+force -freeze sim:/pwm_led_top/SW 100 0
+run
+force -freeze sim:/pwm_led_top/SW 111 0
+run
+# End time: 00:48:11 on Sep 24,2017, Elapsed time: 8:47:23
+# Errors: 7, Warnings: 0
