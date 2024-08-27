@@ -103,8 +103,7 @@ always@(posedge MAX10_CLK2_50)
     end
 	 
 
-assign	LEDR      	=	resrt_n? ( SW[0] ? led_gensor : {	Cont[25:24],Cont[25:24],Cont[25:24],Cont[25:24],Cont[25:24]	} ) :10'h3ff
-;
+//assign	LEDR      	=	resrt_n? ( SW[0] ? led_gensor : {	Cont[25:24],Cont[25:24],Cont[25:24],Cont[25:24],Cont[25:24]	} ) :10'h3ff;
 assign	mSEG7_DIG	=	resrt_n? {	Cont[27:24],Cont[27:24],Cont[27:24],Cont[27:24],Cont[27:24],Cont[27:24] } :{6{4'b1000}};
 
 
@@ -166,16 +165,16 @@ VGA_OSD_RAM			u2	(	//	Read Out Side
 							
 							
 //  Initial Setting and Data Read Back
-spi_ee_config u_spi_ee_config (			
-						.iRSTN(DLY_RST),															
-						.iSPI_CLK(spi_clk),								
-						.iSPI_CLK_OUT(spi_clk_out),								
-						.iG_INT2(GSENSOR_INT[1]),            
-						.oDATA_L(data_x[7:0]),
-						.oDATA_H(data_x[15:8]),
-						.SPI_SDIO(GSENSOR_SDI),
-						.oSPI_CSN(GSENSOR_CS_N),
-						.oSPI_CLK(GSENSOR_SCLK));
+//spi_ee_config u_spi_ee_config (			
+//						.iRSTN(DLY_RST),															
+//						.iSPI_CLK(spi_clk),								
+//						.iSPI_CLK_OUT(spi_clk_out),								
+//						.iG_INT2(GSENSOR_INT[1]),            
+//						.oDATA_L(data_x[7:0]),
+//						.oDATA_H(data_x[15:8]),
+//						.SPI_SDIO(GSENSOR_SDI),
+//						.oSPI_CSN(GSENSOR_CS_N),
+//						.oSPI_CLK(GSENSOR_SCLK));
 			
 wire [9:0] led_gensor;
 			
@@ -187,6 +186,34 @@ led_driver u_led_driver	(
 						.iG_INT2(GSENSOR_INT[1]),            
 						.oLED(led_gensor));
 							
+
+Embed Embed (
+		.clk_clk                             (MAX10_CLK1_50),                             //                          clk.clk
+		.clk_0_clk                           (ADC_CLK_10),                           //                        clk_0.clk
+		.ledr_export                         (LEDR),                         //                         ledr.export
+		.reset_reset_n                       (ARDUINO_RESET_N),                       //                        reset.reset_n
+		.reset_0_reset_n                     (ARDUINO_RESET_N),                     //                      reset_0.reset_n
+		.sw_export                           (SW),                           //                           sw.export
+		.dram_clk_clk                        (DRAM_CLK),                        //                     dram_clk.clk
+		.gsensor_MISO                        (GSENSOR_SDI),                        //                      gsensor.MISO
+		.gsensor_MOSI                        (GSENSOR_SDO),                        //                             .MOSI
+		.gsensor_SCLK                        (GSENSOR_SCLK),                        //                             .SCLK
+		.gsensor_SS_n                        (GSENSOR_CS_N),                        //                             .SS_n
+		.dram_addr                           (DRAM_ADDR),                           //                         dram.addr
+		.dram_ba                             (DRAM_BA),                             //                             .ba
+		.dram_cas_n                          (DRAM_CAS_N),                          //                             .cas_n
+		.dram_cke                            (DRAM_CKE),                            //                             .cke
+		.dram_cs_n                           (DRAM_CS_N),                           //                             .cs_n
+		.dram_dq                             (DRAM_DQ),                             //                             .dq
+		.dram_dqm                            (DRAM_LDQM),                            //                             .dqm
+		.dram_ras_n                          (DRAM_RAS_N),                          //                             .ras_n
+		.dram_we_n                           (DRAM_WE_N),                           //                             .we_n
+		.altpll_1_areset_conduit_export      (ARDUINO_IO[2]),      //      altpll_1_areset_conduit.export
+		.altpll_1_locked_conduit_export      (ARDUINO_IO[3]),      //      altpll_1_locked_conduit.export
+		.modular_adc_0_adc_pll_locked_export (ARDUINO_IO[1])  // modular_adc_0_adc_pll_locked.export
+	);
+	
+assign DRAM_UDQM = DRAM_LDQM;  
 
 
 endmodule
