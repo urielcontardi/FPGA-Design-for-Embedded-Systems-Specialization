@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=C\:\\Projetos\\FPGA-Design-for-Embedded-Systems-Specialization\\4_FPGA_Capstone-Building_FPGA_Projects\\Week4\\DE10liteEmbed\\software\\Embed_System
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Projetos\\FPGA-Design-for-Embedded-Systems-Specialization\\4_FPGA_Capstone-Building_FPGA_Projects\\Week4\\DE10liteEmbed\\Embed.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\Projetos\\FPGA-Design-for-Embedded-Systems-Specialization\\4_FPGA_Capstone-Building_FPGA_Projects\\Week4\\DE10liteEmbed\\software\\Embed_System_bsp

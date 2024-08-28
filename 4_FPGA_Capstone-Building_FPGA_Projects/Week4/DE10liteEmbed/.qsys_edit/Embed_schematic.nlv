@@ -1,0 +1,61 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst Embed.nios2_gen2_0.cpu -pg 1
+preplace inst Embed.modular_adc_0.sample_store_internal -pg 1
+preplace inst Embed.modular_adc_0.sequencer_internal -pg 1
+preplace inst Embed.modular_adc_0 -pg 1 -lvl 5 -y 790
+preplace inst Embed.altpll_0 -pg 1 -lvl 2 -y 270
+preplace inst Embed -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst Embed.altpll_1 -pg 1 -lvl 4 -y 770
+preplace inst Embed.sdram -pg 1 -lvl 3 -y 320
+preplace inst Embed.nios2_gen2_0.clock_bridge -pg 1
+preplace inst Embed.master_0.p2b -pg 1
+preplace inst Embed.timer_0 -pg 1 -lvl 4 -y 450
+preplace inst Embed.modular_adc_0.cb_inst -pg 1
+preplace inst Embed.nios2_gen2_0 -pg 1 -lvl 1 -y 380
+preplace inst Embed.master_0.timing_adt -pg 1
+preplace inst Embed.master_0.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst Embed.onchip_memory2_0 -pg 1 -lvl 4 -y 670
+preplace inst Embed.modular_adc_0.rst_inst -pg 1
+preplace inst Embed.master_0.b2p_adapter -pg 1
+preplace inst Embed.master_0.clk_src -pg 1
+preplace inst Embed.master_0.transacto -pg 1
+preplace inst Embed.led_pio -pg 1 -lvl 4 -y 30
+preplace inst Embed.jtag_uart_0 -pg 1 -lvl 4 -y 130
+preplace inst Embed.onchip_flash_0 -pg 1 -lvl 4 -y 550
+preplace inst Embed.modular_adc_0.control_internal -pg 1
+preplace inst Embed.sysid -pg 1 -lvl 4 -y 370
+preplace inst Embed.master_0.b2p -pg 1
+preplace inst Embed.nios2_gen2_0.reset_bridge -pg 1
+preplace inst Embed.master_0.clk_rst -pg 1
+preplace inst Embed.clk_0 -pg 1 -lvl 1 -y 270
+preplace inst Embed.spi_0 -pg 1 -lvl 3 -y 460
+preplace inst Embed.slide_pio -pg 1 -lvl 4 -y 230
+preplace inst Embed.mm_clock_crossing_bridge_0 -pg 1 -lvl 3 -y 160
+preplace inst Embed.clk_1 -pg 1 -lvl 3 -y 650
+preplace inst Embed.master_0.p2b_adapter -pg 1
+preplace inst Embed.master_0.fifo -pg 1
+preplace inst Embed.master_0 -pg 1 -lvl 4 -y 980
+preplace netloc FAN_OUT<net_container>Embed</net_container>(SLAVE)sysid.control_slave,(MASTER)mm_clock_crossing_bridge_0.m0,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)timer_0.s1,(SLAVE)led_pio.s1,(SLAVE)slide_pio.s1) 1 3 1 1260
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)clk_1.clk_in_reset,(SLAVE)Embed.reset_0) 1 0 3 NJ 680 NJ 680 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)spi_0.external,(SLAVE)Embed.gsensor) 1 0 3 NJ 580 NJ 580 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)sdram.wire,(SLAVE)Embed.dram) 1 0 3 NJ 340 NJ 390 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)altpll_1.areset_conduit,(SLAVE)Embed.altpll_1_areset_conduit) 1 0 4 NJ 780 NJ 780 NJ 780 NJ
+preplace netloc POINT_TO_POINT<net_container>Embed</net_container>(SLAVE)modular_adc_0.adc_pll_clock,(MASTER)altpll_1.c0) 1 4 1 1610
+preplace netloc FAN_OUT<net_container>Embed</net_container>(SLAVE)mm_clock_crossing_bridge_0.s0_clk,(MASTER)altpll_0.c0,(SLAVE)onchip_flash_0.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)sdram.clk,(SLAVE)spi_0.clk,(SLAVE)nios2_gen2_0.clk) 1 0 4 210 560 NJ 560 930 590 1300
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)Embed.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)slide_pio.external_connection,(SLAVE)Embed.sw) 1 0 4 NJ 150 NJ 150 NJ 150 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)Embed.reset) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>Embed</net_container>(MASTER)master_0.master_reset,(SLAVE)master_0.clk_reset,(SLAVE)onchip_flash_0.nreset,(SLAVE)timer_0.reset,(SLAVE)slide_pio.reset,(SLAVE)mm_clock_crossing_bridge_0.s0_reset,(SLAVE)spi_0.reset,(SLAVE)mm_clock_crossing_bridge_0.m0_reset,(MASTER)clk_0.clk_reset,(SLAVE)onchip_memory2_0.reset1,(MASTER)clk_1.clk_reset,(SLAVE)modular_adc_0.reset_sink,(SLAVE)altpll_1.inclk_interface_reset,(SLAVE)sysid.reset,(SLAVE)led_pio.reset,(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)jtag_uart_0.reset,(SLAVE)sdram.reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)altpll_0.inclk_interface_reset) 1 0 5 250 540 630 430 870 450 1340 940 1670
+preplace netloc FAN_OUT<net_container>Embed</net_container>(SLAVE)master_0.clk,(SLAVE)modular_adc_0.clock,(SLAVE)altpll_1.inclk_interface,(MASTER)clk_1.clk) 1 3 2 1240 900 1610
+preplace netloc FAN_OUT<net_container>Embed</net_container>(SLAVE)jtag_uart_0.clk,(SLAVE)slide_pio.clk,(SLAVE)mm_clock_crossing_bridge_0.m0_clk,(MASTER)altpll_0.c2,(SLAVE)led_pio.clk,(SLAVE)timer_0.clk,(SLAVE)sysid.clk) 1 2 2 970 310 1240
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)Embed.clk_0,(SLAVE)clk_1.clk_in) 1 0 3 NJ 600 NJ 600 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)Embed.ledr,(SLAVE)led_pio.external_connection) 1 0 4 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>Embed</net_container>(MASTER)nios2_gen2_0.irq,(SLAVE)spi_0.irq,(SLAVE)timer_0.irq,(SLAVE)slide_pio.irq,(SLAVE)modular_adc_0.sample_store_irq,(SLAVE)jtag_uart_0.irq) 1 1 4 NJ 470 910 430 1280 660 1630
+preplace netloc POINT_TO_POINT<net_container>Embed</net_container>(MASTER)clk_0.clk,(SLAVE)altpll_0.inclk_interface) 1 1 1 N
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)Embed.modular_adc_0_adc_pll_locked,(SLAVE)modular_adc_0.adc_pll_locked) 1 0 5 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ
+preplace netloc EXPORT<net_container>Embed</net_container>(MASTER)Embed.dram_clk,(MASTER)altpll_0.c1) 1 2 4 NJ 290 NJ 360 NJ 360 NJ
+preplace netloc INTERCONNECT<net_container>Embed</net_container>(MASTER)nios2_gen2_0.data_master,(SLAVE)mm_clock_crossing_bridge_0.s0,(SLAVE)altpll_0.pll_slave,(SLAVE)onchip_flash_0.csr,(SLAVE)spi_0.spi_control_port,(SLAVE)onchip_flash_0.data,(SLAVE)onchip_memory2_0.s1,(MASTER)master_0.master,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)modular_adc_0.sample_store_csr,(SLAVE)altpll_1.pll_slave,(SLAVE)sdram.s1,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)modular_adc_0.sequencer_csr) 1 0 5 230 520 650 410 990 610 1320 920 1690
+preplace netloc EXPORT<net_container>Embed</net_container>(SLAVE)Embed.altpll_1_locked_conduit,(SLAVE)altpll_1.locked_conduit) 1 0 4 NJ 860 NJ 860 NJ 860 NJ
+levelinfo -pg 1 0 180 1990
+levelinfo -hier Embed 190 370 680 1050 1420 1810 1910

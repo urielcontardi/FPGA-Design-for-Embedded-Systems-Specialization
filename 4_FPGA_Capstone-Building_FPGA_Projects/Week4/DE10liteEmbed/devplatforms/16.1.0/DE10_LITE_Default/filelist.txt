@@ -1,0 +1,2 @@
+DE10_LITE_Default.qar
+DE10_LITE_Default.qp_info

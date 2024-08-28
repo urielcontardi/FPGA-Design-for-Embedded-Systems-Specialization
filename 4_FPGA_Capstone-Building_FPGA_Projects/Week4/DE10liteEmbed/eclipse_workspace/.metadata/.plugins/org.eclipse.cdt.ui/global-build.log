@@ -1,0 +1,37 @@
+22:07:10 **** Build of configuration Nios II for project Embed_System ****
+make all 
+Info: Building ../Embed_System_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Embed_System_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Embed_System_bsp//HAL/inc -I../Embed_System_bsp/ -I../Embed_System_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DALT_SINGLE_THREADED    -O2 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+Info: Compiling src/alarm_util.c to obj/default/src/alarm_util.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Embed_System_bsp//HAL/inc -I../Embed_System_bsp/ -I../Embed_System_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DALT_SINGLE_THREADED    -O2 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/alarm_util.o src/alarm_util.c
+Info: Compiling src/delay_wait.c to obj/default/src/delay_wait.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Embed_System_bsp//HAL/inc -I../Embed_System_bsp/ -I../Embed_System_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DALT_SINGLE_THREADED    -O2 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/delay_wait.o src/delay_wait.c
+Info: Compiling src/error_loop.c to obj/default/src/error_loop.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Embed_System_bsp//HAL/inc -I../Embed_System_bsp/ -I../Embed_System_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DALT_SINGLE_THREADED    -O2 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/error_loop.o src/error_loop.c
+Info: Compiling src/jtag_uart_util.c to obj/default/src/jtag_uart_util.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Embed_System_bsp//HAL/inc -I../Embed_System_bsp/ -I../Embed_System_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DALT_SINGLE_THREADED    -O2 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/jtag_uart_util.o src/jtag_uart_util.c
+Info: Compiling src/led_util.c to obj/default/src/led_util.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Embed_System_bsp//HAL/inc -I../Embed_System_bsp/ -I../Embed_System_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DALT_SINGLE_THREADED    -O2 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/src/led_util.o src/led_util.c
+Info: Linking Embed_System.elf
+nios2-elf-g++  -T'../Embed_System_bsp//linker.x' -msys-crt0='../Embed_System_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Embed_System_bsp/   -Wl,-Map=Embed_System.map   -O2 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o Embed_System.elf obj/default/main.o obj/default/src/alarm_util.o obj/default/src/delay_wait.o obj/default/src/error_loop.o obj/default/src/jtag_uart_util.o obj/default/src/led_util.o -lm -msys-lib=m
+nios2-elf-insert Embed_System.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x8000040 --timestamp 1724806713 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name Embed --quartus_project_dir "C:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week4/DE10liteEmbed" --jdi C:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week4/DE10liteEmbed/software/Embed_System_bsp/../../Embed.jdi --sopcinfo C:/Projetos/FPGA-Design-for-Embedded-Systems-Specialization/4_FPGA_Capstone-Building_FPGA_Projects/Week4/DE10liteEmbed/software/Embed_System_bsp/../../Embed.sopcinfo
+Info: (Embed_System.elf) 23 KBytes program size (code + initialized data).
+Info:                    15 KBytes free for stack + heap.
+Info: Creating Embed_System.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Embed_System.elf >Embed_System.objdump
+[Embed_System build complete]
+22:09:17 **** Build of configuration Nios II for project Embed_System ****
+make all 
+Info: Building ../Embed_System_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Embed_System_bsp/
+[BSP build complete]
+[Embed_System build complete]
+22:09:57 **** Incremental Build of configuration Nios II for project Embed_System ****
+make all 
+Info: Building ../Embed_System_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Embed_System_bsp/
+[BSP build complete]
+[Embed_System build complete]

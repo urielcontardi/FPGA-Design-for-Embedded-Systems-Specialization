@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Embed_System_bsp&apos;" deleteContents="true" description="Delete resource &apos;Embed_System_bsp&apos;" element1="/Embed_System_bsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1724807052010"/>
+</session>
